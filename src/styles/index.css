@@ -1,7 +1,9 @@
-*{
-  margin: 0;
-  padding: 0;
+.header {
+  display: flex;
+  height: 200px;
+  background-color: 0;
 }
+
 .App {
   text-align: center;
 }
@@ -24,7 +26,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(54, 14, 154);
+  color: rgb(43, 255, 0);
 }
 
 .App-link {
