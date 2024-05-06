@@ -1,25 +1,79 @@
-.side-modal-container {
+
+.side-modal {
   display: flex;
-  position: absolute;
-  background-color: aquamarine;
-  width: 50vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #c1bcbc;
+  width: 80%;
   height: 100vh;
+  position: absolute;
+  z-index: 200;
+  top: 0;
   right: 0;
-  nav {
+
+  &-container {
+    display: flex;
+    position: relative;
+
+    &-close-btn {
       display: flex;
-      justify-content: space-between;
+      position: absolute;
+      left: 20px;
+      top: 20px;
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px;
+
+    a.nav-link {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
       gap: 10px;
-      font-size: 18px;
-      a.nav-link {
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-          gap: 10px;
-          text-decoration: none;
-          color: #000;
-        }
-        &-link:hover {
-            cursor: pointer;
+      text-decoration: none;
+      color: #000;
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &.open {
+    animation: openModal .5s ease-in 0s 1 normal forwards;
+  }
+
+  @keyframes openModal {
+    0% {
+      transform: scaleX(0);
+      transform-origin: 100% 100%;
+
+    }
+    100% {
+      transform: scaleX(1);
+      transform-origin: 100% 100%;
+    }
+  }
+
+  &.close {
+    animation: closeModal .5s ease-in 0s 1 normal forwards;
+  }
+
+  @keyframes closeModal {
+    0% {
+      transform: scaleX(1);
+      transform-origin: 100% 100%;
+
+    }
+    100% {
+      transform: scaleX(0);
+      transform-origin: 100% 100%;
     }
   }
 }

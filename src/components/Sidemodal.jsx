@@ -2,30 +2,32 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/sass/sidemodal.scss";
 
-function Sidemodal({ closeModal }) {
+function Sidemodal({ closeModal,isOpen }) {
   const handleCloseModal = () => {
     closeModal(); // Appeler la fonction closeModal de Header
   };
-
+  const handleMouseLeave = () => {
+    closeModal();
+  };
   return (
-    <section className="side-modal open"> {/* Ajout de la classe "open" pour ouvrir le modal */}
-      <div className="side-modal-container">
+    <aside className={`side-modal ${isOpen ? 'open' : 'close'}`} onMouseLeave={handleMouseLeave}>
+          <Link className="side-modal-container-close-btn" onClick={handleCloseModal}>
+            close
+          </Link>
+      <div className="side-modal-container ">
         <nav>
-          <Link className="nav-link" to="/">
+          <Link className="nav-link" to="/"  onClick={handleCloseModal}>
             ACCUEIL
           </Link>
-          <Link className="nav-link" to="/Projects">
+          <Link className="nav-link" to="/Projects" onClick={handleCloseModal}>
             PROJETS
           </Link>
-          <Link className="nav-link" to="/Projects">
+          <Link className="nav-link" to="/Projects" onClick={handleCloseModal}>
             A PROPOS
-          </Link>
-          <Link className="nav-link" to="/Contact" onClick={handleCloseModal}>
-            close
           </Link>
         </nav>
       </div>
-    </section>
+    </aside>
   );
 }
 export default Sidemodal;

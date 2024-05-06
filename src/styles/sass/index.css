@@ -40,7 +40,7 @@ header nav button.nav-link:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #c1bcbc;
+  background-color: blue;
   width: 80%;
   height: 100vh;
   position: absolute;
@@ -49,7 +49,6 @@ header nav button.nav-link:hover {
   right: 0;
 }
 .side-modal-container {
-  display: flex;
   position: relative;
 }
 .side-modal-container-close-btn {
@@ -75,32 +74,27 @@ header nav button.nav-link:hover {
 }
 .side-modal nav a.nav-link:hover {
   cursor: pointer;
-  text-decoration: underline;
 }
 .side-modal.open {
   animation: openModal 0.5s ease-in 0s 1 normal forwards;
 }
 @keyframes openModal {
-  0% {
+  from {
     transform: scaleX(0);
-    transform-origin: 100% 100%;
   }
-  100% {
+  to {
     transform: scaleX(1);
-    transform-origin: 100% 100%;
   }
 }
 .side-modal.close {
   animation: closeModal 0.5s ease-in 0s 1 normal forwards;
 }
 @keyframes closeModal {
-  0% {
+  from {
     transform: scaleX(1);
-    transform-origin: 100% 100%;
   }
-  100% {
+  to {
     transform: scaleX(0);
-    transform-origin: 100% 100%;
   }
 }
 
@@ -141,6 +135,4 @@ header nav button.nav-link:hover {
   to {
     transform: rotate(360deg);
   }
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
