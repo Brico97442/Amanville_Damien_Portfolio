@@ -1,15 +1,16 @@
-// Header.js
 import React from "react";
 import "../styles/sass/header.scss";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header>
       <nav>
-        <li>Accueil</li>
-        <li>Projets</li>
-        <li>A Propos</li>
-        <li>Contact</li>
+        <Link to="/">A D
+        </Link>
+        <Link to="/Projects">
+          Menu
+        </Link>
       </nav>
     </header>
   );
