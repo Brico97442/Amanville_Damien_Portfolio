@@ -1,6 +1,25 @@
 .side-modal-container {
   display: flex;
-  width: 200px;
-  height: 200px;
+  position: absolute;
   background-color: aquamarine;
+  width: 50vh;
+  height: 100vh;
+  right: 0;
+  nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 18px;
+      a.nav-link {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          gap: 10px;
+          text-decoration: none;
+          color: #000;
+        }
+        &-link:hover {
+            cursor: pointer;
+    }
+  }
 }

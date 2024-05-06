@@ -1,9 +1,14 @@
+import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/sass/header.scss";
+import "../styles/sass/sidemodal.scss";
 
-function Sidemodal() {
+function Sidemodal({ closeModal }) {
+  const handleCloseModal = () => {
+    closeModal(); // Appeler la fonction closeModal de Header
+  };
+
   return (
-    <section>
+    <section className="side-modal open"> {/* Ajout de la classe "open" pour ouvrir le modal */}
       <div className="side-modal-container">
         <nav>
           <Link className="nav-link" to="/">
@@ -15,8 +20,8 @@ function Sidemodal() {
           <Link className="nav-link" to="/Projects">
             A PROPOS
           </Link>
-          <Link className="nav-link" to="/Projects">
-            Menu
+          <Link className="nav-link" to="/Contact" onClick={handleCloseModal}>
+            close
           </Link>
         </nav>
       </div>
