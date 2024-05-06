@@ -1,15 +1,15 @@
 // Header.js
 import React from "react";
-import "../styles/sass/header.scss"
+import "../styles/sass/header.scss";
 
 function Header() {
   return (
     <header>
       <nav>
-        <li>Home</li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>Accueil</li>
+        <li>Projets</li>
+        <li>A Propos</li>
+        <li>Contact</li>
       </nav>
     </header>
   );
