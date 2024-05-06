@@ -9,9 +9,9 @@ function Header() {
   return (
     <header>
       <nav>
-        <Link to="/">Amanville.Damien
+        <Link className="nav-link" to="/">Amanville.Damien
         </Link>
-        <Link to="/Projects">
+        <Link className="nav-link" to="/Projects">
           Menu <FontAwesomeIcon icon={faBars} />
         </Link>
       </nav>
