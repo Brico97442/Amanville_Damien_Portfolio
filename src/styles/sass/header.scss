@@ -2,13 +2,15 @@ header {
   height: 200px;
   background-color: #f5f5f5;
   padding: 20px;
-
+  
   nav {
     display: flex;
     justify-content: space-between;
-
-    li {
-      list-style: none;
+    a {
+      display: flex;
+      gap: 10px;
+      text-decoration: none;
+      color: #000;
     }
   }
 }

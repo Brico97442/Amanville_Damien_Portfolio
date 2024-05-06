@@ -1,15 +1,18 @@
 import React from "react";
-import "../styles/sass/header.scss";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faBars} from'@fortawesome/free-solid-svg-icons'
 import { Link } from "react-router-dom";
+
+import "../styles/sass/header.scss";
 
 function Header() {
   return (
     <header>
       <nav>
-        <Link to="/">A D
+        <Link to="/">Amanville.Damien
         </Link>
         <Link to="/Projects">
-          Menu
+          Menu <FontAwesomeIcon icon={faBars} />
         </Link>
       </nav>
     </header>
