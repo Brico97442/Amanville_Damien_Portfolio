@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
-import video from "../img/ohmyfoodminiature.mp4";
 
-function VideoPlayer() {
+function VideoPlayer({title,video,description}) {
   const videoRef = useRef(null);
 
   const handleClick = () => {
@@ -20,14 +19,17 @@ function VideoPlayer() {
   return (
     <div className="card" onClick={handleClick}>
       <div className="card-video" onMouseLeave={handleMouseLeave}>
-        <h2>"Oh my food"</h2>
+        <h2>{title}</h2>
         <video
           width="400"
-          height="300"
+          height="200"
           ref={videoRef}
         >
           <source src={video} type="video/mp4" />
         </video>
+        <div className="video-description">
+          {description}
+        </div>
       </div>
     </div>
   );
