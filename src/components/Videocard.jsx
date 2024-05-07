@@ -1,35 +1,17 @@
-import React, { useRef } from "react";
+import React from "react";
+import ReactPlayer from "react-player";
 
-function VideoPlayer({title,video,description}) {
-  const videoRef = useRef(null);
+function VideoPlayer({ title,video,description}) {
 
   const handleClick = () => {
-    if (videoRef.current) {
-      videoRef.current.play();
-    }
-  };
-
-  const handleMouseLeave = () => {
-    if (videoRef.current) {
-      videoRef.current.currentTime = 0;
-      videoRef.current.pause();
-    }
   };
 
   return (
     <div className="card" onClick={handleClick}>
-      <div className="card-video" onMouseLeave={handleMouseLeave}>
+      <div className="card-video" >
         <h2>{title}</h2>
-        <video
-          width="400"
-          height="200"
-          ref={videoRef}
-        >
-          <source src={video} type="video/mp4" />
-        </video>
-        <div className="video-description">
-          {description}
-        </div>
+        <ReactPlayer url={video}/>
+        <div className="video-description">{description}</div>
       </div>
     </div>
   );
