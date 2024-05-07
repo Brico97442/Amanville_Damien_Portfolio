@@ -1,0 +1,14 @@
+@charset "UTF-8";
+.video-card {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 25%;
+}
+.video-card video {
+  width: 400px;
+  transition: opacity 0.3s ease; /* Transition de l'opacité */
+}
+
+.video-card:not(:hover) {
+  opacity: 0.6; /* Opacité réduite lors du survol */
+}/*# sourceMappingURL=videocard.css.map */

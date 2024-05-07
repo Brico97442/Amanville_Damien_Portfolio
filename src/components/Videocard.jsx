@@ -11,14 +11,15 @@ function VideoPlayer(event) {
   };
 
   return (
-    <div>
+    <div className="video-card">
       <h2>"Oh my food"</h2>
       <video
         width="640"
         height="360"
          // Afficher les contrôles de lecture
         onMouseEnter={handleMouseEnter} // Démarrer la lecture automatique lors du survol
-        onMouseLeave={handleMouseLeave} // Mettre en pause la lecture lorsque le curseur quitte
+        onMouseLeave={handleMouseLeave}
+         // Mettre en pause la lecture lorsque le curseur quitte
       >
         <source src={video} type="video/mp4" />
       </video>
