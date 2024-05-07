@@ -5,9 +5,9 @@ import Welcome from "../components/Welcome";
 
 function Home() {
   return (
-    <div className="home">
+    <main className="home">
         <Welcome/>
-      </div>
+      </main>
   )
 }
 export default Home;

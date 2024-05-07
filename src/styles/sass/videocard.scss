@@ -1,13 +1,15 @@
-.video-card {
-  video {
-    width: 400px;
-    transition: opacity 0.3s ease; /* Transition de l'opacité */
+.card-video {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  video{
+    transition: opacity 0.45s ease; /* Transition de l'opacité */
   }
   width: 100%;
   box-sizing: border-box;
   border-radius: 25%;
 }
 
-.video-card:not(:hover) {
+.card-video:not(:hover) {
     opacity: 0.6; /* Opacité réduite lors du survol */
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -8,14 +9,19 @@ body {
 }
 
 header {
-  height: 50px;
+  width: 100%;
   background-color: #f5f5f5;
   background-color: #121212;
-  padding: 45px;
-  margin-bottom: 35px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 header nav {
   display: flex;
+  padding: 45px;
+  height: 50px;
+  align-items: center;
   justify-content: space-between;
   font-size: 18px;
   position: relative;
@@ -177,14 +183,34 @@ footer section a {
   text-decoration: none;
 }
 
-.video-card {
-  width: 200px;
-  height: 200px;
+.card-video {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 25%;
+}
+.card-video video {
+  transition: opacity 0.45s ease; /* Transition de l'opacité */
+}
+
+.card-video:not(:hover) {
+  opacity: 0.6; /* Opacité réduite lors du survol */
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card-wrrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  flex-wrap: wrap;
+  grid-column-gap: 20px;
 }
 
 .App {
@@ -194,4 +220,8 @@ footer section a {
   background-color: #f5f5f5;
   position: relative;
   height: 100vh;
+}
+
+main {
+  margin-top: 175px;
 }/*# sourceMappingURL=index.css.map */

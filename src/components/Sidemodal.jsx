@@ -34,7 +34,7 @@ function Sidemodal({ closeModal, isOpen }) {
           <Link className="nav-link" to="/Projects" onClick={handleCloseModal}>
             A PROPOS
           </Link>
-          <Link className="nav-link" to="/Projects" onClick={handleCloseModal}>
+          <Link className="nav-link" to="/Contact" onClick={handleCloseModal}>
             CONTACT
           </Link>
         </nav>
