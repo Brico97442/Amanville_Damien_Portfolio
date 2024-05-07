@@ -1,12 +1,14 @@
 .projects{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    h2{
+      margin-bottom: 50px;
+    }
 }
 .card-wrrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  grid-column-gap: 20px;
+  gap: 40px;
 }
