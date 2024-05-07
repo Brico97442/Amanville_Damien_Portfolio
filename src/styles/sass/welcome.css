@@ -1,10 +1,9 @@
 .welcome {
   display: flex;
-  align-items: center;
   justify-content: center;
-  max-width: 1440px;
 }
 .welcome-content {
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
   justify-content: start;

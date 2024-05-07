@@ -1,0 +1,28 @@
+header {
+  height: 80px;
+  background-color: #f5f5f5;
+  background-color: #121212;
+  padding: 20px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  position: relative;
+}
+header nav button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #000;
+  background-color: #121212;
+  border: none;
+  font-size: 18px;
+}
+header nav .nav-link {
+  text-decoration: none;
+  color: #fff;
+}
+header nav button.nav-link:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=header.css.map */

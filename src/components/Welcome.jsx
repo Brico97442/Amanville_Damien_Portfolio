@@ -7,7 +7,7 @@ function Welcome() {
     <section className="welcome">
       <div className="welcome-content">
         <h1>DévelOppeur</h1>
-        <h2>Front End</h2>
+        <h2>Front End*</h2>
         <div className="welcome-subtitle">
           <span className="undescore"></span>
           <p>Web</p>
