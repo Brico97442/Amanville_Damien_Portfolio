@@ -3,8 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #c1bcbc;
-  width: 80%;
+  background-color: #bcbcbc;
+  width: 50%;
   height: 100vh;
   position: absolute;
   z-index: 200;
@@ -20,6 +20,8 @@
       position: absolute;
       left: 20px;
       top: 20px;
+      border: none;
+      background-color: #bcbcbc;
     }
   }
 
@@ -37,16 +39,15 @@
       gap: 10px;
       text-decoration: none;
       color: #000;
-
+      cursor: pointer;
       &:hover {
-        cursor: pointer;
         text-decoration: underline;
       }
     }
   }
 
   &.open {
-    animation: openModal .5s ease-in 0s 1 normal forwards;
+    animation: openModal .5s ease-in-out 0s 1 normal forwards;
   }
 
   @keyframes openModal {

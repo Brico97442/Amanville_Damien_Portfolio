@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
+
 import "../styles/sass/sidemodal.scss";
 
-function Sidemodal({ closeModal,isOpen }) {
+function Sidemodal({ closeModal, isOpen }) {
   const handleCloseModal = () => {
     closeModal(); // Appeler la fonction closeModal de Header
   };
@@ -10,13 +13,19 @@ function Sidemodal({ closeModal,isOpen }) {
     closeModal();
   };
   return (
-    <aside className={`side-modal ${isOpen ? 'open' : 'close'}`} onMouseLeave={handleMouseLeave}>
-          <Link className="side-modal-container-close-btn" onClick={handleCloseModal}>
-            close
-          </Link>
+    <aside
+      className={`side-modal ${isOpen ? "open" : "close"}`}
+      onMouseLeave={handleMouseLeave}
+    >
+      <button
+        className="side-modal-container-close-btn"
+        onClick={handleCloseModal}
+      >
+        <FontAwesomeIcon icon={faXmark} size="xl" />
+      </button>
       <div className="side-modal-container ">
         <nav>
-          <Link className="nav-link" to="/"  onClick={handleCloseModal}>
+          <Link className="nav-link" to="/" onClick={handleCloseModal}>
             ACCUEIL
           </Link>
           <Link className="nav-link" to="/Projects" onClick={handleCloseModal}>
@@ -24,6 +33,9 @@ function Sidemodal({ closeModal,isOpen }) {
           </Link>
           <Link className="nav-link" to="/Projects" onClick={handleCloseModal}>
             A PROPOS
+          </Link>
+          <Link className="nav-link" to="/Projects" onClick={handleCloseModal}>
+            CONTACT
           </Link>
         </nav>
       </div>

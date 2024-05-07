@@ -40,8 +40,8 @@ header nav button.nav-link:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #c1bcbc;
-  width: 80%;
+  background-color: #bcbcbc;
+  width: 50%;
   height: 100vh;
   position: absolute;
   z-index: 200;
@@ -57,6 +57,8 @@ header nav button.nav-link:hover {
   position: absolute;
   left: 20px;
   top: 20px;
+  border: none;
+  background-color: #bcbcbc;
 }
 .side-modal nav {
   display: flex;
@@ -72,13 +74,13 @@ header nav button.nav-link:hover {
   gap: 10px;
   text-decoration: none;
   color: #000;
+  cursor: pointer;
 }
 .side-modal nav a.nav-link:hover {
-  cursor: pointer;
   text-decoration: underline;
 }
 .side-modal.open {
-  animation: openModal 0.5s ease-in 0s 1 normal forwards;
+  animation: openModal 0.5s ease-in-out 0s 1 normal forwards;
 }
 @keyframes openModal {
   0% {
@@ -102,6 +104,63 @@ header nav button.nav-link:hover {
     transform: scaleX(0);
     transform-origin: 100% 100%;
   }
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1440px;
+}
+.welcome-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.welcome-content h1 {
+  font-weight: 400;
+  font-size: 220px;
+  color: #363636;
+}
+.welcome-content h2 {
+  color: #0a0a0a;
+  font-size: 150px;
+}
+.welcome-content .welcome-subtitle {
+  display: flex;
+  flex-direction: row;
+  align-items: last baseline;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  60% {
+    opacity: 0.9;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.welcome-content .welcome-subtitle .undescore {
+  display: inline-block;
+  width: 100px; /* Ajustez la largeur selon vos besoins */
+  height: 5px; /* Ajustez la hauteur selon vos besoins */
+  background-color: black; /* Couleur de l'underscore */
+  animation: blink 1s infinite;
+}
+.welcome-content .welcome-subtitle p {
+  font-size: 80px;
+  color: #1c1c1c;
 }
 
 .App {

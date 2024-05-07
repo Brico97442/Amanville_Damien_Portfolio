@@ -1,0 +1,58 @@
+.welcome {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  max-width: 1440px;
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    h1 {
+      font-weight: 400;
+      font-size: 220px;
+      color: #363636;
+    }
+    h2 {
+      color: #0a0a0a;
+      font-size: 150px;
+    }
+    .welcome-subtitle {
+        display: flex;
+        flex-direction: row;
+        align-items: last baseline;
+      @keyframes blink {
+        0% {
+          opacity: 0;
+        }
+        40% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 0.9;
+        }
+        60% {
+          opacity: 0.9;
+        }
+        75% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      .undescore {
+        display: inline-block;
+        width: 100px; /* Ajustez la largeur selon vos besoins */
+        height: 5px; /* Ajustez la hauteur selon vos besoins */
+        background-color: black; /* Couleur de l'underscore */
+        animation: blink 1s infinite;
+      }
+      p {
+        font-size: 80px;
+        color: #1c1c1c;
+      }
+    }
+   
+
+  }
+}

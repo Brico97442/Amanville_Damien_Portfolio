@@ -6,14 +6,15 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import "../styles/sass/header.scss";
 
-function Header({ openModal }) { // Recevoir la fonction openModal en tant que prop
+function Header({ openModal }) {
+  // Recevoir la fonction openModal en tant que prop
   return (
     <header>
       <nav>
         <Link className="nav-link" to="/">
-          Amanville.Damien
+          HOME
         </Link>
-        <button onMouseEnter={openModal} className="nav-link"> 
+        <button onClick={openModal} className="nav-link">
           Menu <FontAwesomeIcon icon={faBars} />
         </button>
       </nav>
