@@ -2,7 +2,7 @@
   "name": "amanville_damien_portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Brico97442.github.io/Amanville_Damien_Portfolio",
+  "homepage": "https://Brico97442.github.io/Amanville_Damien_Portfolio/",
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
