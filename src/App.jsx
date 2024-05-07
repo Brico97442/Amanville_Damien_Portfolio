@@ -29,7 +29,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Projects" element={<Projects />} />
           <Route path="/Contact" element={<Contact />} />
-          <Route path="Amanville_Damien_Portfolio/Home/" element={<Home/>} />
         </Routes>
         <Footer/>
       </Router>
