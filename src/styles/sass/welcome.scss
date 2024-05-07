@@ -1,24 +1,28 @@
 .welcome {
   display: flex;
   justify-content: center;
+  
   &-content {
     max-width: 1440px;
     display: flex;
     flex-direction: column;
     justify-content: start;
+    
     h1 {
       font-weight: 400;
       font-size: 220px;
       color: #363636;
     }
+    
     h2 {
       color: #0a0a0a;
       font-size: 150px;
     }
+    
     .welcome-subtitle {
-        display: flex;
-        flex-direction: row;
-        align-items: last baseline;
+      display: flex;
+      gap: 10px;
+      align-items: last baseline;
       @keyframes blink {
         0% {
           opacity: 0;
@@ -51,7 +55,5 @@
         color: #1c1c1c;
       }
     }
-   
-
   }
 }

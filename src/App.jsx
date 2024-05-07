@@ -7,10 +7,11 @@ import Sidemodal from "./components/Sidemodal";
 import Projects from "./pages/Projects";
 
 import "./styles/index.css";
+import Footer from "./components/Footer";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+  
   const openModal = () => {
     setIsModalOpen(true);
   };
@@ -28,6 +29,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Projects" element={<Projects />} />
         </Routes>
+        <Footer/>
       </Router>
     </div>
   );
