@@ -1,66 +1,43 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
+import emailjs from '@emailjs/browser';
+import "../styles/sass/contact.scss";
 
 function ContactForm() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: ""
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-  };
-
-  const handleSubmit = (e) => {
+  const form = useRef();
+  const sendEmail = (e) => {
     e.preventDefault();
-    // Vous pouvez ajouter ici la logique pour envoyer les données du formulaire à votre backend
-    console.log(formData);
-    // Réinitialiser le formulaire après soumission
-    setFormData({
-      name: "",
-      email: "",
-      message: ""
-    });
+    emailjs
+    .sendForm('service_m5cmqly', 'template_mm758gb', form.current, {
+      publicKey: 'HrZ-9kP7V5zM5Kd1B',
+    })
+    .then(
+      (result) => {
+        console.log('SUCCESS!');
+      },
+      (error) => {
+        console.log('FAILED...', error.text);
+      },
+    );
+    e.target.reset()
   };
-
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="name">Nom :</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <div>
-        <label htmlFor="email">Email :</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <div>
-        <label htmlFor="message">Message :</label>
-        <textarea
-          id="message"
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          required
-        ></textarea>
-      </div>
+    <form ref={form} onSubmit={sendEmail}>
+      <input type="text" id="user_name" name="user_name" required placeholder="Nom" />
+      <input
+        type="email"
+        id="email"
+        name="user_email"
+        required
+        placeholder="Email"
+      />
+      <input
+        type="text"
+        id="subject"
+        name="subject"
+        required
+        placeholder="Sujet"
+      />
+      <textarea id="message" name="message" placeholder="Votre Message" required></textarea>
       <button type="submit">Envoyer</button>
     </form>
   );

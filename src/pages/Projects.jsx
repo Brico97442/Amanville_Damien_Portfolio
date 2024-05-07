@@ -1,9 +1,10 @@
 import React from "react";
 import Videocard from "../components/Videocard";
+
 function Projects() {
   return (
     <main className="projects">
-      <p>PROJETS</p>
+      <h2>PROJETS</h2>
       <div className="card-wrrapper">
         <Videocard />
         <Videocard />

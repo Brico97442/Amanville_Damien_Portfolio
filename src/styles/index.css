@@ -213,6 +213,22 @@ footer section a {
   grid-column-gap: 20px;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.contact .form-wrapper {
+  display: flex;
+}
+.contact .form-wrapper form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .App {
   display: flex;
   flex-direction: column;
