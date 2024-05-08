@@ -6,7 +6,6 @@ import Sidemodal from "./components/Sidemodal";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
-import { HashRouter } from "react-router-dom";
 
 import "./styles/index.css";
 
