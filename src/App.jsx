@@ -6,6 +6,7 @@ import Sidemodal from "./components/Sidemodal";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import Notfound from "./pages/Notfound";
 
 import "./styles/index.css";
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Projects" element={<Projects />} />
           <Route path="/Contact" element={<Contact />} />
+          <Route path="/*" element={<Notfound />} />
         </Routes>
         <Footer/>
       </Router>
