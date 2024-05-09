@@ -259,11 +259,11 @@ footer section {
   flex-direction: column;
   gap: 20px;
   background-color: #adb5bd;
-  padding: 20px;
-  margin-top: 30px;
+  padding-top: 40px;
 }
 .competences hr {
   border: solid 1px #000;
+  margin: 0 20px;
 }
 .competences p {
   text-decoration: underline;
@@ -273,6 +273,7 @@ footer section {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+  margin: 0 20px;
 }
 .competences .competences-wrapper .icons {
   display: flex;
