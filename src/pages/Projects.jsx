@@ -1,25 +1,30 @@
 import React from "react";
 import Videocard from "../components/Videocard";
-import videoData1 from "../img/ninacarducci.webm"
-import videoData2 from "../img/ohmyfood.webm"
-
+import videoData1 from "../img/ninacarducci.webm";
+import videoData2 from "../img/ohmyfood.webm";
+import { Link } from "react-router-dom";
 
 function Projects() {
   // Supposons que les données de la vidéo se trouvent dans un tableau appelé "videos" dans votre fichier JSON
   return (
     <main className="projects">
       <h2>PROJETS</h2>
+      <hr />
       <div className="card-wrrapper">
-          <Videocard 
-          title="Nina Carducci"
-          description="Le site d'une photographe"
-          video={videoData1}
+        <Link to="https://brico97442.github.io/NinaCarducci/" target="blank">
+          <Videocard
+            title="Nina Carducci"
+            description="Le site d'une photographe"
+            video={videoData1}
           />
-          <Videocard 
-          title="Oh My Food"
-          description="Appplication de Réservation"
-          video={videoData2}
+        </Link>
+        <Link to="https://brico97442.github.io/OhMyFood/" target="blank">
+          <Videocard
+            title="Oh My Food"
+            description="Appplication de Réservation"
+            video={videoData2}
           />
+        </Link>
       </div>
     </main>
   );

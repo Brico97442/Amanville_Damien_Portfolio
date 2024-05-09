@@ -17,6 +17,10 @@ header {
   left: 0;
   z-index: 2;
 }
+header a {
+  text-align: left;
+  font-weight: 200;
+}
 header nav {
   display: flex;
   padding: 45px;
@@ -115,13 +119,33 @@ header nav button.nav-link:hover {
 .welcome {
   display: flex;
   justify-content: center;
+  margin-top: 40px;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.welcome h2 {
+  text-align: start;
+  font-size: 2.2em;
+}
+.welcome .identity {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.welcome .identity img {
+  object-fit: contain;
+  max-width: 75%;
+  height: auto;
+  border-radius: 25px;
 }
 .welcome-content {
   max-width: 1440px;
   display: flex;
   flex-direction: column;
   justify-content: start;
-  margin-top: 50px;
 }
 .welcome-content h1 {
   font-weight: 400;
@@ -187,15 +211,14 @@ footer section {
   gap: 10px;
   width: 100%;
   box-sizing: border-box;
-  border-radius: 25%;
+  border-radius: 15px;
   padding: 10px;
 }
-.card-video #video {
+.card-video video {
   transition: opacity 0.45s ease; /* Transition de l'opacité */
-  width: 100%;
 }
 
-.card-video:not(:hover) {
+video:not(:hover) {
   opacity: 0.6; /* Opacité réduite lors du survol */
 }
 
@@ -204,8 +227,9 @@ footer section {
   flex-direction: column;
   padding: 20px;
 }
-.projects h2 {
-  margin-bottom: 30px;
+.projects hr {
+  border: solid 1px #000;
+  margin: 20px;
 }
 
 .card-wrrapper {
@@ -215,6 +239,14 @@ footer section {
   align-items: center;
   flex-wrap: wrap;
   gap: 40px;
+}
+.card-wrrapper a {
+  color: #000;
+  text-decoration: none;
+}
+.card-wrrapper .card {
+  background-color: #adb5bd;
+  border-radius: 15px;
 }
 
 .contact {
@@ -258,7 +290,7 @@ footer section {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-top: 40px;
+  padding: 20px;
 }
 .competences hr {
   border: solid 1px #000;
@@ -269,8 +301,10 @@ footer section {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #adb5bd;
+  border-radius: 15px;
 }
 .competences .competences-wrapper p {
   text-decoration: underline;

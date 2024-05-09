@@ -11,7 +11,7 @@ function Header({ openModal }) {
     <header>
       <nav>
         <Link className="nav-link" to="/">
-          AD
+          Amanville<br/>Damien
         </Link>
         <button onClick={openModal} className="nav-link">
           Menu <FontAwesomeIcon icon={faBars} />

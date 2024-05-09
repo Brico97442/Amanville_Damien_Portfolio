@@ -9,41 +9,56 @@ import reduxImg from "../img/assets/redux.png";
 import jsImg from "../img/assets/javascript.png";
 import html5Img from "../img/assets/html5.png";
 import githubImg from "../img/assets/github.png";
+import vercelImg from "../img/assets/vercel.png";
+import ghpImg from "../img/assets/ghpages.svg";
 
 function Skills() {
   // Recevoir la fonction openModal en tant que prop
   return (
-    <div className="competences">
+    <div>
+      <div className="competences">
         <h1>Compétences</h1>
-        <hr/>
+        <hr />
         <p>J'ai déjà travailler avec :</p>
-      <div className="competences-wrapper">
-        <div className="icons">
-          <img src={jsImg} alt="Icône JS" />
+        <div className="competences-wrapper">
+          <div className="icons">
+            <img src={jsImg} alt="Icône JS" />
+          </div>
+          <div className="icons">
+            <img src={reduxImg} alt="Icône Redux" />
+          </div>
+          <div className="icons">
+            <img src={sassImg} alt="Icône Sass" />
+          </div>
+          <div className="icons">
+            <img src={mongodbImg} alt="Icône MongoDB" />
+          </div>
+          <div className="icons">
+            <img src={html5Img} alt="Icône HTML5" />
+          </div>
+          <div className="icons">
+            <img src={reactImg} alt="Icône React" />
+          </div>
+          <div className="icons">
+            <img src={reactRouterImg} alt="Icône React Router" />
+          </div>
+          <div className="icons">
+            <img src={cssImg} alt="Icône CSS" />
+          </div>
         </div>
-        <div className="icons">
-          <img src={reduxImg} alt="Icône Redux" />
-        </div>
-        <div className="icons">
-          <img src={sassImg} alt="Icône Sass" />
-        </div>
-        <div className="icons">
-          <img src={mongodbImg} alt="Icône MongoDB" />
-        </div>
-        <div className="icons">
-          <img src={githubImg} alt="Icône GitHub" />
-        </div>
-        <div className="icons">
-          <img src={html5Img} alt="Icône HTML5" />
-        </div>
-        <div className="icons">
-          <img src={reactImg} alt="Icône React" />
-        </div>
-        <div className="icons">
-          <img src={reactRouterImg} alt="Icône React Router" />
-        </div>
-        <div className="icons">
-          <img src={cssImg} alt="Icône CSS" />
+      </div>
+      <div className="competences">
+        <p>Les services que j'utilise :</p>
+        <div className="competences-wrapper">
+          <div className="icons">
+            <img src={githubImg} alt="Icône GitHub" />
+          </div>
+          <div className="icons">
+            <img src={vercelImg} alt="Icône GitHub" />
+          </div>
+          <div className="icons">
+            <img src={ghpImg} alt="Icône GitHub Pages" />
+          </div>
         </div>
       </div>
     </div>
