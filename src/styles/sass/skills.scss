@@ -1,0 +1,36 @@
+.competences {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #adb5bd;
+  padding: 20px;
+  margin-top: 30px;
+
+  hr {
+    border: solid 1px #000;
+  }
+
+  p {
+    text-decoration: underline;
+  }
+
+  .competences-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+    .icons {
+      display: flex;
+      max-width: 50px;
+      min-width: 50px;
+      max-height: 50px;
+
+      img {
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

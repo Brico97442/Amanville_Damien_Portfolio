@@ -26,16 +26,16 @@ function Sidemodal({ closeModal, isOpen }) {
       <div className="side-modal-container ">
         <nav>
           <Link className="nav-link" to="/" onClick={handleCloseModal}>
-            ACCUEIL
+            Accueil
           </Link>
           <Link className="nav-link" to="/Projects" onClick={handleCloseModal}>
-            PROJETS
+            Projets
           </Link>
-          <Link className="nav-link" to="/Projects" onClick={handleCloseModal}>
-            A PROPOS
+          <Link className="nav-link" to="/Skills" onClick={handleCloseModal}>
+            Compétences
           </Link>
           <Link className="nav-link" to="/Contact" onClick={handleCloseModal}>
-            CONTACT
+            Contact
           </Link>
         </nav>
       </div>

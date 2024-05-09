@@ -133,7 +133,7 @@ header nav button.nav-link:hover {
   font-size: 3em;
 }
 .welcome-content p {
-  font-size: 80px;
+  font-size: 2.2em;
   color: #1c1c1c;
 }
 .welcome-content .welcome-subtitle {
@@ -171,7 +171,7 @@ header nav button.nav-link:hover {
 }
 
 footer {
-  background-color: #000;
+  background-color: #121212;
   padding: 50px;
   margin-top: auto;
   color: #fff;
@@ -202,8 +202,10 @@ footer section {
 .projects {
   display: flex;
   flex-direction: column;
-  padding: 20px h2;
-  padding-margin-bottom: 50px;
+  padding: 20px;
+}
+.projects h2 {
+  margin-bottom: 30px;
 }
 
 .card-wrrapper {
@@ -250,6 +252,38 @@ footer section {
   height: 35px;
   border: solid 1px #000;
   border-radius: 10px;
+}
+
+.competences {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #adb5bd;
+  padding: 20px;
+  margin-top: 30px;
+}
+.competences hr {
+  border: solid 1px #000;
+}
+.competences p {
+  text-decoration: underline;
+}
+.competences .competences-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.competences .competences-wrapper .icons {
+  display: flex;
+  max-width: 50px;
+  min-width: 50px;
+  max-height: 50px;
+}
+.competences .competences-wrapper .icons img {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
 }
 
 .App {

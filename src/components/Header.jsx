@@ -7,7 +7,6 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "../styles/sass/header.scss";
 
 function Header({ openModal }) {
-  // Recevoir la fonction openModal en tant que prop
   return (
     <header>
       <nav>
