@@ -264,9 +264,6 @@ footer section {
   border: solid 1px #000;
   margin: 0 20px;
 }
-.competences p {
-  text-decoration: underline;
-}
 .competences .competences-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -274,6 +271,9 @@ footer section {
   gap: 10px;
   padding: 20px;
   background-color: #adb5bd;
+}
+.competences .competences-wrapper p {
+  text-decoration: underline;
 }
 .competences .competences-wrapper .icons {
   display: flex;
