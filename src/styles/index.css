@@ -125,12 +125,16 @@ header nav button.nav-link:hover {
 }
 .welcome-content h1 {
   font-weight: 400;
-  font-size: 220px;
+  font-size: 2em;
   color: #363636;
 }
 .welcome-content h2 {
   color: #0a0a0a;
-  font-size: 150px;
+  font-size: 3em;
+}
+.welcome-content p {
+  font-size: 80px;
+  color: #1c1c1c;
 }
 .welcome-content .welcome-subtitle {
   display: flex;
@@ -159,14 +163,10 @@ header nav button.nav-link:hover {
 }
 .welcome-content .welcome-subtitle .undescore {
   display: inline-block;
-  width: 100px; /* Ajustez la largeur selon vos besoins */
-  height: 5px; /* Ajustez la hauteur selon vos besoins */
+  width: 2em; /* Ajustez la largeur selon vos besoins */
+  height: 0.125em; /* Ajustez la hauteur selon vos besoins */
   background-color: black; /* Couleur de l'underscore */
   animation: blink 1s infinite;
-}
-.welcome-content .welcome-subtitle p {
-  font-size: 80px;
-  color: #1c1c1c;
 }
 
 footer {
@@ -190,9 +190,11 @@ footer section a {
   width: 100%;
   box-sizing: border-box;
   border-radius: 25%;
+  padding: 10px;
 }
-.card-video video {
+.card-video #video {
   transition: opacity 0.45s ease; /* Transition de l'opacité */
+  width: 100%;
 }
 
 .card-video:not(:hover) {
@@ -208,6 +210,7 @@ footer section a {
 }
 
 .card-wrrapper {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -259,6 +262,7 @@ footer section a {
 }
 
 main {
+  width: 100%;
   margin-top: 175px;
   max-width: 1440px;
   margin: auto;

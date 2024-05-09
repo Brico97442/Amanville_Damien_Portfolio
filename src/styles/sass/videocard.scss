@@ -2,12 +2,15 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  video{
-    transition: opacity 0.45s ease; /* Transition de l'opacité */
-  }
   width: 100%;
   box-sizing: border-box;
   border-radius: 25%;
+  padding: 10px;
+  #video {
+    transition: opacity 0.45s ease; /* Transition de l'opacité */
+    width: 100%;
+  }
+  
 }
 
 .card-video:not(:hover) {

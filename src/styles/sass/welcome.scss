@@ -10,15 +10,20 @@
     
     h1 {
       font-weight: 400;
-      font-size: 220px;
+      font-size: 2em;
       color: #363636;
     }
     
     h2 {
       color: #0a0a0a;
-      font-size: 150px;
+      font-size: 3em;
     }
     
+    p {
+      font-size: 80px;
+      color: #1c1c1c;
+    }
+
     .welcome-subtitle {
       display: flex;
       gap: 10px;
@@ -43,17 +48,15 @@
           opacity: 0;
         }
       }
+      
       .undescore {
         display: inline-block;
-        width: 100px; /* Ajustez la largeur selon vos besoins */
-        height: 5px; /* Ajustez la hauteur selon vos besoins */
+        width: 2em; /* Ajustez la largeur selon vos besoins */
+        height: 0.125em; /* Ajustez la hauteur selon vos besoins */
         background-color: black; /* Couleur de l'underscore */
         animation: blink 1s infinite;
       }
-      p {
-        font-size: 80px;
-        color: #1c1c1c;
-      }
+      
     }
   }
 }
