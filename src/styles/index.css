@@ -178,10 +178,7 @@ footer {
 }
 footer section {
   display: flex;
-}
-footer section a {
-  color: #fff;
-  text-decoration: none;
+  justify-content: center;
 }
 
 .card-video {
