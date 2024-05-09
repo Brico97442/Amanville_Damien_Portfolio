@@ -24,7 +24,6 @@ header nav {
   align-items: center;
   justify-content: space-between;
   font-size: 18px;
-  position: relative;
 }
 header nav button {
   display: flex;
@@ -48,11 +47,11 @@ header nav button.nav-link:hover {
   justify-content: center;
   align-items: center;
   background-color: #bcbcbc;
-  width: 75%;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: absolute;
   z-index: 200;
-  top: 0;
+  top: -140px;
   right: 0;
 }
 .side-modal-container {
@@ -122,6 +121,7 @@ header nav button.nav-link:hover {
   display: flex;
   flex-direction: column;
   justify-content: start;
+  margin-top: 50px;
 }
 .welcome-content h1 {
   font-weight: 400;
@@ -140,6 +140,7 @@ header nav button.nav-link:hover {
   display: flex;
   gap: 10px;
   align-items: last baseline;
+  justify-content: end;
 }
 @keyframes blink {
   0% {
@@ -204,9 +205,8 @@ footer section a {
 .projects {
   display: flex;
   flex-direction: column;
-}
-.projects h2 {
-  margin-bottom: 50px;
+  padding: 20px h2;
+  padding-margin-bottom: 50px;
 }
 
 .card-wrrapper {
@@ -223,13 +223,15 @@ footer section a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  padding: 20px;
 }
 .contact .form-wrapper {
   display: flex;
+  justify-content: center;
+  width: 100%;
 }
 .contact .form-wrapper form {
-  width: 400px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -259,13 +261,11 @@ footer section a {
   background-color: #f5f5f5;
   position: relative;
   height: 100vh;
+  margin-top: 140px;
 }
 
 main {
-  width: 100%;
-  margin-top: 175px;
   max-width: 1440px;
-  margin: auto;
 }
 
 /*# sourceMappingURL=index.css.map */
