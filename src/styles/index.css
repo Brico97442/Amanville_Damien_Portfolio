@@ -92,6 +92,10 @@ header nav button.nav-link:hover {
 .side-modal.open {
   animation: openModal 0.5s ease-in-out 0s 1 normal forwards;
 }
+.side-modal.close {
+  animation: closeModal 0.5s ease-in 0s 1 normal forwards;
+}
+
 @keyframes openModal {
   0% {
     transform: scaleX(0);
@@ -101,9 +105,6 @@ header nav button.nav-link:hover {
     transform: scaleX(1);
     transform-origin: 100% 100%;
   }
-}
-.side-modal.close {
-  animation: closeModal 0.5s ease-in 0s 1 normal forwards;
 }
 @keyframes closeModal {
   0% {
@@ -115,7 +116,6 @@ header nav button.nav-link:hover {
     transform-origin: 100% 100%;
   }
 }
-
 .welcome {
   display: flex;
   justify-content: center;
@@ -151,10 +151,32 @@ header nav button.nav-link:hover {
   font-weight: 400;
   font-size: 2em;
   color: #363636;
+  animation: translateRight 1.7s ease-out 0s normal none;
+}
+@keyframes translateRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 .welcome-content h2 {
   color: #0a0a0a;
   font-size: 3em;
+  animation: slideLeft 1.5s ease 0s 1 normal forwards;
+}
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(250px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 .welcome-content p {
   font-size: 2.2em;

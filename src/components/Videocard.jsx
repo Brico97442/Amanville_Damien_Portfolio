@@ -4,7 +4,6 @@ import ReactPlayer from "react-player";
 function VideoPlayer({ title,video,description}) {
 
   const handleClick = () => {
-    
   };
 
   return (

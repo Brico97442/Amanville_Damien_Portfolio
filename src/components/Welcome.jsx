@@ -4,6 +4,7 @@ import "../styles/sass/header.scss";
 import damienImg from "../img/assets/img/portfolio/20230703_172611.jpg"
 
 function Welcome() {
+  
   return (
     <section className="welcome">
       <div className="identity">

@@ -7,13 +7,17 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "../styles/sass/header.scss";
 
 function Header({ openModal }) {
+  const handleOpenModal = () => {
+    openModal();
+  };
+
   return (
     <header>
       <nav>
         <Link className="nav-link" to="/">
           Amanville<br/>Damien
         </Link>
-        <button onClick={openModal} className="nav-link">
+        <button onClick={handleOpenModal} className="nav-link">
           Menu <FontAwesomeIcon icon={faBars} />
         </button>
       </nav>
