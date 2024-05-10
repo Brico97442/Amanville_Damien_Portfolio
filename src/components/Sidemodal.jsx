@@ -1,34 +1,30 @@
 // Sidemodal.js
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import "../styles/sass/sidemodal.scss";
 
-function Sidemodal({ closeModal, isOpen }) {
-  const handleCloseModal = () => {
-    closeModal();
-  };
-
+function Sidemodal({ isOpen, closeModal }) {
   return (
     <aside className={`side-modal ${isOpen ? "open" : "close"}`}>
-      <button className="side-modal-container-close-btn" onClick={handleCloseModal}>
+      <button className="side-modal-container-close-btn" onClick={closeModal}>
         <FontAwesomeIcon icon={faXmark} size="xl" />
       </button>
       <div className="side-modal-container">
         <nav>
-          <Link className="nav-link" to="/" onClick={handleCloseModal}>
+          <NavLink className="nav-link" to="/" onClick={closeModal}>
             ACCUEIL
-          </Link>
-          <Link className="nav-link" to="/Projects" onClick={handleCloseModal}>
+          </NavLink>
+          <NavLink className="nav-link" to="/Projects" onClick={closeModal}>
             PROJETS
-          </Link>
-          <Link className="nav-link" to="/Skills" onClick={handleCloseModal}>
+          </NavLink>
+          <NavLink className="nav-link" to="/Skills" onClick={closeModal}>
             COMPETENCES
-          </Link>
-          <Link className="nav-link" to="/Contact" onClick={handleCloseModal}>
+          </NavLink>
+          <NavLink className="nav-link" to="/Contact" onClick={closeModal}>
             CONTACT
-          </Link>
+          </NavLink>
         </nav>
       </div>
     </aside>

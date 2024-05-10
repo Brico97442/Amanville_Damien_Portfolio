@@ -95,7 +95,6 @@ header nav button.nav-link:hover {
 .side-modal.close {
   animation: closeModal 0.5s ease-in 0s 1 normal forwards;
 }
-
 @keyframes openModal {
   0% {
     transform: scaleX(0);
@@ -116,6 +115,7 @@ header nav button.nav-link:hover {
     transform-origin: 100% 100%;
   }
 }
+
 .welcome {
   display: flex;
   justify-content: center;
