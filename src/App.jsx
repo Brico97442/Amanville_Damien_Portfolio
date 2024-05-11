@@ -34,8 +34,8 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/*" element={<Notfound />} />
         </Routes>
-        {isModalOpen && <Sidemodal closeModal={closeModal} isOpen={isModalOpen} />}
         <Footer/>
+        {isModalOpen && <Sidemodal closeModal={closeModal} isOpen={isModalOpen} />}
       </Router>
     </div>
   );
