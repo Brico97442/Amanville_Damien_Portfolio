@@ -15,6 +15,7 @@ function App() {
 
   const openModal = () => {
     setIsModalOpen(true);
+    console.log("titi")
   };
 
   const closeModal = () => {
@@ -33,8 +34,8 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/*" element={<Notfound />} />
         </Routes>
+        {isModalOpen && <Sidemodal closeModal={closeModal} isOpen={isModalOpen} />}
         <Footer/>
-      <Sidemodal closeModal={closeModal} isOpen={isModalOpen} />
       </Router>
     </div>
   );

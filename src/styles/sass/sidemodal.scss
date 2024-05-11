@@ -10,11 +10,11 @@
   z-index: 200;
   top: -140px;
   right: 0;
-
+  
   &-container {
     display: flex;
     position: relative;
-
+    
     &-close-btn {
       display: flex;
       position: absolute;
@@ -24,14 +24,14 @@
       background-color: #bcbcbc;
     }
   }
-
+  
   nav {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     gap: 20px;
     font-size: 18px;
-
+    
     a.nav-link {
       display: flex;
       align-items: center;
@@ -46,7 +46,6 @@
       }
     }
   }
-
   &.open {
     animation: openModal .5s ease-in-out 0s 1 normal forwards;
   }
@@ -54,27 +53,31 @@
   &.close {
     animation: closeModal .5s ease-in 0s 1 normal forwards;
   }
+  
   @keyframes openModal {
     0% {
       transform: scaleX(0);
       transform-origin: 100% 100%;
-
+      
     }
     100% {
       transform: scaleX(1);
       transform-origin: 100% 100%;
     }
   }
+  
   
   @keyframes closeModal {
     0% {
       transform: scaleX(1);
       transform-origin: 100% 100%;
-  
     }
     100% {
       transform: scaleX(0);
       transform-origin: 100% 100%;
+      }
     }
   }
-}
+  
+
+
