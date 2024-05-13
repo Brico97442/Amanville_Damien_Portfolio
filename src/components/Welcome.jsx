@@ -18,6 +18,9 @@ function Welcome() {
           <p>Web</p>
         </div>
       </div>
+      <div>
+        <p>Bonjour,  mon nom est "Amanville Damien", passionné de technologies en tout genres</p>
+      </div>
     </section>
   );
 }
