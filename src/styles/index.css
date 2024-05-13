@@ -314,6 +314,10 @@ video:not(:hover) {
   gap: 20px;
   padding: 20px;
 }
+.competences span {
+  text-decoration: underline;
+  font-weight: 700;
+}
 .competences hr {
   border: solid 1px #000;
   margin: 0 20px;

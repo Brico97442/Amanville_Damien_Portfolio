@@ -65,10 +65,10 @@ function Skills() {
       <h1>Parcours</h1>
       <hr/>
       <p>
-        <span>2023</span> : Open Classrooms Formations, DévelOppeur-Web Intégrateur Web 
+        <span>2023</span><br/>Open Classrooms Formations, DévelOppeur-Web Intégrateur Web 
       </p>
       <p>
-      <span>2022</span> : Skydo Digital Studio 
+      <span>2022</span><br/>Skydo Digital Studio Immersion en Entreprise
       </p>
       </section>
     </div>
