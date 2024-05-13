@@ -61,6 +61,16 @@ function Skills() {
           </div>
         </div>
       </div>
+      <section className="competences">
+      <h1>Parcours</h1>
+      <hr/>
+      <p>
+        <span>2023</span> : Open Classrooms Formations, DévelOppeur-Web Intégrateur Web 
+      </p>
+      <p>
+      <span>2022</span> : Skydo Digital Studio 
+      </p>
+      </section>
     </div>
   );
 }
