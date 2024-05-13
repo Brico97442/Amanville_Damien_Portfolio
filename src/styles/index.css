@@ -51,12 +51,12 @@ header nav button.nav-link:hover {
   justify-content: center;
   align-items: center;
   background-color: #bcbcbc;
-  width: 100%;
-  height: 100%;
   position: absolute;
   z-index: 200;
   top: -140px;
   right: 0;
+  width: 100%;
+  height: 100%;
 }
 .side-modal-container {
   display: flex;
@@ -91,9 +91,11 @@ header nav button.nav-link:hover {
 }
 .side-modal.open {
   animation: openModal 0.5s ease-in-out 0s 1 normal forwards;
+  overflow: hidden; /* Empêche le défilement */
 }
 .side-modal.close {
   animation: closeModal 0.5s ease-in 0s 1 normal forwards;
+  display: none;
 }
 @keyframes openModal {
   0% {
