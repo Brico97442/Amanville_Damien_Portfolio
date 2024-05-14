@@ -7,7 +7,7 @@ function Projects() {
   
   return (
     <main className="projects">
-      <h2>Projets</h2>
+      <h2>Mes projets</h2>
       <hr />
       <div className="card-wrrapper">
         <Videocard

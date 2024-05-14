@@ -123,6 +123,7 @@ header nav button.nav-link:hover {
   display: flex;
   justify-content: center;
   margin-top: 40px;
+  min-height: 78vh;
   margin-bottom: 40px;
   flex-wrap: wrap;
   gap: 20px;
@@ -389,7 +390,7 @@ video:not(:hover) {
   flex-direction: column;
   gap: 20px;
   padding: 20px;
-  background-color: #f5f5f5;
+  background-color: #fff;
 }
 .competences h1 {
   font-size: 24px;
@@ -428,7 +429,7 @@ video:not(:hover) {
   flex-direction: column;
   gap: 20px;
   padding: 20px;
-  background-color: #fff;
+  background-color: #f5f5f5;
 }
 .career hr {
   border: solid 1px #000;
@@ -500,6 +501,24 @@ video:not(:hover) {
   width: 100%;
   justify-content: center;
   align-items: center;
+}
+
+.about .content .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+.about .content .wrapper h1 {
+  font-size: 24px;
+}
+.about .content .wrapper hr {
+  border: solid 1px #000;
+  margin: 0 20px;
+}
+.about .content .wrapper p {
+  font-weight: 500;
 }
 
 .App {

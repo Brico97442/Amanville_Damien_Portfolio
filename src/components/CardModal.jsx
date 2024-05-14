@@ -18,7 +18,7 @@ function CardModal({ closeModal, content,link }) {
           onClick={(e) => e.stopPropagation()}
         >
           <p>{content}</p>
-          <NavLink to={link} className="nav-link">Visitez le site</NavLink>
+          <NavLink to={link} target="blank" className="nav-link">Visitez le site</NavLink>
           <button
             className="side-modal-container-close-btn"
             onClick={handleClose}
