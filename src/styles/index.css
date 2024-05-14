@@ -242,14 +242,14 @@ header nav button.nav-link:hover {
   position: absolute;
   width: calc(100% + 8px);
   height: 100%;
-  background-color: #f5f5f5;
+  background-color: #fff;
   border-left: 2px solid #fff;
   right: -8px;
   animation: cursor 0.8s infinite, typing 20s steps(14), resetWidth 0.1s 18s forwards;
 }
 @keyframes cursor {
   to {
-    border-left: 2px solid #f5f5f5;
+    border-left: 2px solid #fff;
   }
 }
 @keyframes words {
@@ -378,18 +378,18 @@ video:not(:hover) {
   flex-direction: column;
   gap: 20px;
   padding: 20px;
-  background-color: #fff;
-}
-.competences span {
-  text-decoration: underline;
-  font-weight: 700;
+  background-color: #f5f5f5;
 }
 .competences h1 {
   font-size: 24px;
+  margin-top: 30px;
 }
 .competences hr {
   border: solid 1px #000;
   margin: 0 20px;
+}
+.competences p {
+  font-weight: 500;
 }
 .competences .competences-wrapper {
   display: flex;
@@ -399,9 +399,6 @@ video:not(:hover) {
   padding: 20px;
   background-color: #adb5bd;
   border-radius: 15px;
-}
-.competences .competences-wrapper p {
-  text-decoration: underline;
 }
 .competences .competences-wrapper .icons {
   display: flex;
@@ -415,11 +412,26 @@ video:not(:hover) {
   height: auto;
 }
 
+.career {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+}
+.career hr {
+  border: solid 1px #000;
+  margin: 0 20px;
+}
+.career span {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
 .App {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: #f5f5f5;
   position: relative;
   margin-top: 140px;
   min-height: 100vh;

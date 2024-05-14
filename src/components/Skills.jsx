@@ -61,9 +61,12 @@ function Skills() {
           </div>
         </div>
       </div>
-      <section className="competences">
+      <section className="career">
       <h1>Parcours</h1>
       <hr/>
+      <p>
+        <span>2024</span><br/>Développeur Web Front-End Freelance
+      </p>
       <p>
         <span>2023</span><br/>Open Classrooms Formations, DévelOppeur-Web Intégrateur Web 
       </p>
