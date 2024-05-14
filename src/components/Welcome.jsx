@@ -10,6 +10,9 @@ function Welcome() {
       <div className="identity">
         <img src={damienImg} alt="Damien"/>      
       </div>
+      <div className="animated-text">
+        Bonjour,<span></span>
+      </div>
       <div className="welcome-content">
         <h1>DévelOppeur</h1>
         <h2>Front-End*</h2>
@@ -17,9 +20,6 @@ function Welcome() {
           <span className="undescore"></span>
           <p>Web</p>
         </div>
-      </div>
-      <div className="animated-text">
-        Bonjour,<span></span>
       </div>
     </section>
   );
