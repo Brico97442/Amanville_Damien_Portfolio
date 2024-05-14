@@ -507,8 +507,8 @@ video:not(:hover) {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 20px;
   background-color: #f5f5f5;
+  padding: 20px;
 }
 .about .content .wrapper h1 {
   font-size: 24px;

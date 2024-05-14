@@ -7,7 +7,7 @@ function Home() {
   return (
     <main className="home">
         <Welcome/>
-        <Section content="celle là aussi" className="about" title="A propos"/>
+        <Section content="k^k^kp^k^pkp^kp^kp^k^pk" className="about" title="A propos"/>
         <Skills/>
         <Section content="cette section parle de moi aussi" className="about" title="Mes services"/>
         <Section content="Commençons un projet ensemble," className="about" title="Contact"/>
