@@ -11,7 +11,7 @@ function Welcome() {
         <img src={damienImg} alt="Damien"/>      
       </div>
       <div className="animated-text">
-        Bonjour,<span></span>
+        <span></span>
       </div>
       <div className="welcome-content">
         <h1>DévelOppeur</h1>
