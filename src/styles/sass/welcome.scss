@@ -10,6 +10,12 @@
     text-align: start;
     font-size: 2.2em;
   }
+  .animated{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
   
   .identity {
     width: 100%;
