@@ -18,9 +18,9 @@ function Welcome() {
           <p>Web</p>
         </div>
       </div>
-      <di div className="animated-text">
+      <div className="animated-text">
         Bonjour,<span></span>
-      </di>
+      </div>
     </section>
   );
 }

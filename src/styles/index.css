@@ -217,6 +217,52 @@ header nav button.nav-link:hover {
   background-color: black; /* Couleur de l'underscore */
   animation: blink 1s infinite;
 }
+.welcome .animated-text {
+  font-weight: 600;
+  min-width: 280px;
+}
+.welcome .animated-text span {
+  position: relative;
+  display: flex;
+}
+.welcome .animated-text span::before {
+  content: "Je suis développeur web";
+  color: #0a0a0a;
+  animation: words 5s 1;
+}
+.welcome .animated-text span::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: #f5f5f5;
+  border-left: 2px solid #0a0a0a;
+  right: -8px;
+  animation: cursor 0.8s infinite, typing 20s steps(14), resetWidth 0.1s 18s forwards;
+}
+@keyframes cursor {
+  to {
+    border-left: 2px solid #f5f5f5;
+  }
+}
+@keyframes words {
+  0%, 100% {
+    content: "mon nom est Amanville Damien";
+  }
+}
+@keyframes typing {
+  10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90% {
+    width: 0;
+  }
+  5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+    width: calc(100% + 8px);
+  }
+}
+@keyframes resetWidth {
+  to {
+    width: 0;
+  }
+}
 
 footer {
   background-color: #121212;
