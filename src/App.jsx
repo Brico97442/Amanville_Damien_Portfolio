@@ -24,7 +24,7 @@ function App() {
   };
   
   return (
-    <div className="App">
+    <div className={`App ${isModalOpen ? 'no-scroll' : ''}`}>
       <Router>
         <Header openModal={openModal} /> 
         <Routes>

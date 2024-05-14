@@ -121,8 +121,7 @@ header nav button.nav-link:hover {
 .welcome {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-  padding: 20px;
+  margin-top: 40px;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -167,7 +166,7 @@ header nav button.nav-link:hover {
 }
 .welcome-content h2 {
   color: #0a0a0a;
-  font-size: 3em;
+  font-size: 2.6em;
   animation: slideLeft 1.5s ease 21s 1 normal forwards;
 }
 @keyframes slideLeft {
@@ -418,6 +417,10 @@ video:not(:hover) {
 
 main {
   max-width: 1440px;
+}
+
+.no-scroll {
+  position: fixed;
 }
 
 /*# sourceMappingURL=index.css.map */
