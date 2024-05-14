@@ -47,11 +47,13 @@
     }
   }
   &.open {
+    content: "";
     animation: openModal .5s ease-in-out 0s 1 normal forwards;
     overflow: hidden; /* Empêche le défilement */
   }
   
   &.close {
+    content: "";
     animation: closeModal .5s ease-in 0s 1 normal forwards;
     display: none;
   }

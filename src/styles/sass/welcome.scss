@@ -9,14 +9,14 @@
     text-align: start;
     font-size: 2.2em;
   }
-
+  
   .identity {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-
+    
     img {
       object-fit: contain;
       max-width: 75%;
@@ -24,14 +24,15 @@
       border-radius: 25px;
     }
   }
-
+  
   &-content {
     max-width: 1440px;
     display: flex;
+    opacity:0;
     flex-direction: column;
     justify-content: start;
-    animation: translateRight 1.7s ease-out 20s normal none;
-
+    animation: slideLeft 1.5s ease-out 20s normal none ,resetOpacity 2s 20s forwards;
+    
     h1 {
       font-weight: 400;
       font-size: 2em;
@@ -41,7 +42,7 @@
     @keyframes translateRight {
       0% {
         opacity: 0;
-        transform: translateX(-50px);
+        transform: translateX(-12vw);
       }
 
       100% {
@@ -53,18 +54,24 @@
     h2 {
       color: #0a0a0a;
       font-size: 2.6em;
-      animation: slideLeft 1.5s ease 21s 1 normal forwards;
+      animation: translateRight 1.5s ease 20s 1 normal forwards;
     }
 
     @keyframes slideLeft {
       0% {
         opacity: 0;
-        transform: translateX(250px);
+        transform: translateX(12vw);
       }
 
       100% {
         opacity: 1;
         transform: translateX(0);
+      }
+    }
+
+    @keyframes resetOpacity {
+      to {
+        opacity: 1;
       }
     }
 
