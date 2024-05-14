@@ -423,10 +423,15 @@ video:not(:hover) {
   position: relative;
   margin-top: 140px;
   min-height: 100vh;
+  width: 100%;
 }
 
 main {
   max-width: 1440px;
+}
+
+.no-scroll {
+  position: fixed;
 }
 
 /*# sourceMappingURL=index.css.map */
