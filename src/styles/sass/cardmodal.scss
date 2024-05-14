@@ -1,0 +1,45 @@
+.card-modal {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  
+  &-content {
+    background-color:#f5f5f5;
+    border-radius: 15px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    font-size: 13px;
+    text-align: center;
+    button{
+        background-color: #f5f5f5;
+    }
+    p{
+        padding: 5px;
+    }
+}
+&-wrapper{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px; 
+   
+}
+.card-wrapper a.navLink {
+    color:red ;
+}
+}
+.card-modal.active {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}

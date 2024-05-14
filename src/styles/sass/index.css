@@ -15,7 +15,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 2;
 }
 header a {
   text-align: left;
@@ -145,7 +145,8 @@ header nav button.nav-link:hover {
   gap: 10px;
 }
 .welcome .identity img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   max-width: 75%;
   height: auto;
   border-radius: 25px;
@@ -418,7 +419,8 @@ video:not(:hover) {
   max-height: 50px;
 }
 .competences .competences-wrapper .icons img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 100%;
   height: auto;
 }
@@ -460,7 +462,7 @@ video:not(:hover) {
 .card-modal {
   display: none;
   position: absolute;
-  z-index: 2;
+  z-index: 200;
   top: 0;
   left: 0;
 }
@@ -476,7 +478,6 @@ video:not(:hover) {
   margin: 10px;
   padding: 10px;
   font-size: 13px;
-  text-align: center;
 }
 .card-modal-content button {
   background-color: #f5f5f5;
@@ -518,6 +519,4 @@ main {
 
 .no-scroll {
   position: fixed;
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
