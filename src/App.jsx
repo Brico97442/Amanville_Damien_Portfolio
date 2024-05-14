@@ -4,7 +4,6 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import Sidemodal from "./components/Sidemodal";
 import Projects from "./pages/Projects";
-import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import Notfound from "./pages/Notfound";
 import Contact from "./pages/Contact"
@@ -27,15 +26,14 @@ function App() {
     <div className={`App ${isModalOpen ? 'no-scroll' : ''}`}>
       <Router>
         <Header openModal={openModal} /> 
+        {isModalOpen && <Sidemodal closeModal={closeModal} isOpen={isModalOpen} />}
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/Projects" element={<Projects />} />
-          <Route path="/Skills" element={<Skills />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/*" element={<Notfound />} />
         </Routes>
         <Footer/>
-        {isModalOpen && <Sidemodal closeModal={closeModal} isOpen={isModalOpen} />}
       </Router>
     </div>
   );

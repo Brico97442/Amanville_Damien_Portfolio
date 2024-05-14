@@ -57,6 +57,7 @@ header nav button.nav-link:hover {
   right: 0;
   width: 100%;
   height: 100%;
+  max-height: 110vh;
 }
 .side-modal-container {
   display: flex;
@@ -90,12 +91,10 @@ header nav button.nav-link:hover {
   text-decoration: underline;
 }
 .side-modal.open {
-  content: "";
   animation: openModal 0.5s ease-in-out 0s 1 normal forwards;
   overflow: hidden; /* Empêche le défilement */
 }
 .side-modal.close {
-  content: "";
   animation: closeModal 0.5s ease-in 0s 1 normal forwards;
   display: none;
 }
@@ -124,6 +123,7 @@ header nav button.nav-link:hover {
   display: flex;
   justify-content: center;
   margin-top: 40px;
+  margin-bottom: 40px;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -341,8 +341,6 @@ video:not(:hover) {
 .contact {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 20px;
 }
 .contact .form-wrapper {
@@ -380,10 +378,14 @@ video:not(:hover) {
   flex-direction: column;
   gap: 20px;
   padding: 20px;
+  background-color: #fff;
 }
 .competences span {
   text-decoration: underline;
   font-weight: 700;
+}
+.competences h1 {
+  font-size: 24px;
 }
 .competences hr {
   border: solid 1px #000;
@@ -425,10 +427,6 @@ video:not(:hover) {
 
 main {
   max-width: 1440px;
-}
-
-.no-scroll {
-  position: fixed;
 }
 
 /*# sourceMappingURL=index.css.map */

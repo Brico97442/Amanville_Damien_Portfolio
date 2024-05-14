@@ -5,7 +5,6 @@ import videoData2 from "../img/ohmyfood.webm";
 import { Link } from "react-router-dom";
 
 function Projects() {
-  // Supposons que les données de la vidéo se trouvent dans un tableau appelé "videos" dans votre fichier JSON
   return (
     <main className="projects">
       <h2>PROJETS</h2>

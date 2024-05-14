@@ -10,6 +10,7 @@
   right: 0;
   width: 100%;
   height: 100%;
+  max-height: 110vh;
   
   &-container {
     display: flex;
@@ -47,13 +48,11 @@
     }
   }
   &.open {
-    content: "";
     animation: openModal .5s ease-in-out 0s 1 normal forwards;
     overflow: hidden; /* Empêche le défilement */
   }
   
   &.close {
-    content: "";
     animation: closeModal .5s ease-in 0s 1 normal forwards;
     display: none;
   }

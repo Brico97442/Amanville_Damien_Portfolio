@@ -19,7 +19,7 @@ function Sidemodal({ isOpen, closeModal }) {
           <NavLink className="nav-link" to="/Projects" onClick={closeModal}>
             PROJETS
           </NavLink>
-          <NavLink className="nav-link" to="/Skills" onClick={closeModal}>
+          <NavLink className="nav-link" to="/#skills" onClick={closeModal}>
             COMPETENCES
           </NavLink>
           <NavLink className="nav-link" to="/Contact" onClick={closeModal}>

@@ -15,7 +15,7 @@ import ghpImg from "../img/assets/ghpages.svg";
 function Skills() {
   // Recevoir la fonction openModal en tant que prop
   return (
-    <div>
+    <div id="skills">
       <div className="competences">
         <h1>Compétences</h1>
         <hr />
