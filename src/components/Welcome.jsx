@@ -7,7 +7,7 @@ function Welcome() {
   return (
     <section className="welcome">
       <div className="identity">
-        <img src={damienImg} alt="Damien" />
+        <img src={damienImg} alt="Damien" rel="preload"/>
       </div>
       <div className="animated">
         <div className="animated-text">
