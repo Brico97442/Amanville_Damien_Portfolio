@@ -122,11 +122,9 @@ header nav button.nav-link:hover {
 .welcome {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
-  min-height: 78vh;
-  margin-bottom: 40px;
   flex-wrap: wrap;
   gap: 20px;
+  padding: 20px;
 }
 .welcome h2 {
   text-align: start;
@@ -137,6 +135,7 @@ header nav button.nav-link:hover {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  width: 100%;
 }
 .welcome .identity {
   width: 100%;
@@ -623,7 +622,7 @@ video:not(:hover) {
   position: relative;
   min-height: 100vh;
   width: 100%;
-  padding-top: 124px;
+  padding-top: 110px;
 }
 
 main {
