@@ -17,6 +17,11 @@ function Home() {
         className="services-card"
         titleContent="Mes services"
       />
+      <Section
+        className="contact"
+        titleContent="Contact"
+        paragraphe="Une idée ? Un projet? Me contacter"
+      />
     </main>
   );
 }
