@@ -3,10 +3,10 @@ import React from "react";
 function Career() {
   return (
     <section id="career" className="career">
-        <h1>Parcours</h1>
+        <h1>Mon parcours</h1>
         <hr />
         <p>
-          <span>2024</span>
+          <span>2024-jusqu'à maintenant</span>
           <br />
           Développeur Web Front-End Freelance
         </p>
