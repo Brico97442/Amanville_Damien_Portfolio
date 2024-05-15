@@ -8,13 +8,17 @@ function Test() {
   return (
     <div id="select-wrapper">
       <div className="button-wrapper">
-        <button className={currentTab === "competences" ? "active" : ""}>
-          <h2 onClick={() => setCurrentTab("competences")}>Compétences</h2>
+        <button
+          className={currentTab === "competences" ? "active" : ""}
+          onClick={() => setCurrentTab("competences")}
+        >
+          <h2>Compétences</h2>
         </button>
-        <button className={currentTab === "career" ? "active" : ""}>
-          <h2 onClick={() => setCurrentTab("career")}>
-            Expériences professionnelles
-          </h2>
+        <button
+          className={currentTab === "career" ? "active" : ""}
+          onClick={() => setCurrentTab("career")}
+        >
+          <h2>Expériences professionnelles</h2>
         </button>
       </div>
 

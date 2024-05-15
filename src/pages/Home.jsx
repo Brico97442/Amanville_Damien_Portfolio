@@ -8,7 +8,7 @@ function Home() {
     <main className="home">
       <Welcome />
       <Section
-        paragraphe="Passionné de web avec une préférence pour l'UI design ,mes compétences sont à votre disposition afin de réalisé vos projets web et de passer de l'idée à la réalité"
+        paragraphe="Passionné de web avec une préférence pour l'UI design, mes compétences sont à votre disposition afin de réalisé vos projets web et de passer de l'idée à la réalité."
         className="about"
         titleContent="A propos de moi"
       />

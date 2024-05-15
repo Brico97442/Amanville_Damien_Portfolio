@@ -39,8 +39,8 @@
     height: 0;
     flex-direction: column;
     justify-content: start;
-    animation: slideLeft 1.5s ease-out 20s normal none,
-      resetOpacity 2s 20s forwards;
+    animation: slideLeft 1.5s ease-out 10s normal none,
+      resetOpacity 2s 10s forwards;
 
     h1 {
       font-weight: 400;
@@ -63,7 +63,7 @@
     h2 {
       color: #0a0a0a;
       font-size: 2.6em;
-      animation: translateRight 1.5s ease 20s 1 normal forwards;
+      animation: translateRight 1.5s ease 10s 1 normal forwards;
     }
 
     @keyframes slideLeft {
@@ -142,7 +142,7 @@
   .animated-text span::before {
     content: "Amanville Damien";
     color: #0a0a0a;
-    animation: words 20s;
+    animation: words 10s;
   }
 
   .animated-text span::after {
@@ -153,8 +153,8 @@
     background-color: #fff;
     border-left: 2px solid #fff;
     right: -8px;
-    animation: cursor 0.8s infinite, typing 20s steps(14),
-      resetWidth 0.1s 18s forwards;
+    animation: cursor 0.8s infinite, typing 10s steps(14),
+    resetWidth 0.1s 9s forwards;
   }
 
   @keyframes cursor {
@@ -220,7 +220,7 @@
   .welcome {
     flex-wrap: nowrap;
     align-items: center;
-    min-height: 84vh;
+    min-height: 85vh;
     .animated {
       .animated-text {
         display: flex;
@@ -228,11 +228,12 @@
       }
       .welcome-content {
         width: 100%;
+        max-width: 350px;
         h2 {
           font-size: 3em;
         }
         h1 {
-          font-size: 2.5em;
+          font-size: 2.2em;
         }
       }
     }

@@ -6,7 +6,7 @@ function Section({ className, titleContent, paragraphe, link, linkText }) {
   // Supposons que vous avez un tableau de données pour les cartes de service
   const serviceData = [
     {
-      title: "One page apllication",
+      title: "One Page Application",
       content:
         "Vous souhaitez simplement et efficacement établir votre présence en ligne ? Cet solution est parfaite pour vous",
         icon: faCode,

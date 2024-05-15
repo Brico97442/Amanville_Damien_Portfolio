@@ -42,3 +42,18 @@
   }
   
 }
+@media (min-width: 600px) {
+  .services-card{
+    .section-content{
+      &-wrapper{
+        .services-card{
+          flex-wrap: wrap;
+          justify-content: center;
+          .card{
+            max-width: 47%;
+          }
+        }
+      }
+    }
+  }
+}
