@@ -2,6 +2,8 @@ import React from "react";
 import Welcome from "../components/Welcome";
 import Skills from "../components/Skills";
 import Section from "../components/Section";
+import Test from "../components/test";
+import Career from "../components/Career";
 
 function Home() {
   return (
@@ -13,6 +15,9 @@ function Home() {
         titleContent="A propos de moi"
       />
       <Skills />
+      <Test/>
+      <Career/>
+      <Section className="career" titleContent="Expériences professionnelles" />
       <Section className="services-card" titleContent="Mes services" />
       <Section
         className="contact"

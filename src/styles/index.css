@@ -443,6 +443,10 @@ video:not(:hover) {
   height: auto;
 }
 
+.hidden {
+  display: none;
+}
+
 .career {
   display: flex;
   flex-direction: column;
