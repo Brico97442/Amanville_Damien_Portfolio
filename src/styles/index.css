@@ -353,33 +353,54 @@ video:not(:hover) {
 .contact {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.contact .section-content {
   padding: 20px;
+}
+.contact .section-content-wrapper {
+  width: 100%;
+}
+.contact .section-content-wrapper hr {
+  border: solid 1px #000;
+  margin: 20px;
+}
+.contact .section-content-wrapper a {
+  color: #000;
+  font-weight: 500;
+  cursor: pointer;
 }
 .contact .form-wrapper {
   display: flex;
-  justify-content: center;
-  width: 100%;
-  max-width: 400px;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 .contact .form-wrapper form {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  margin-top: 40px;
+  width: 100%;
 }
 .contact .form-wrapper form input {
   width: 100%;
+  height: 30px;
+}
+.contact .form-wrapper form input::placeholder {
   padding: 10px;
 }
 .contact .form-wrapper form textarea {
   width: 100%;
   height: 150px;
+}
+.contact .form-wrapper form textarea::placeholder {
   padding: 10px;
 }
 .contact .form-wrapper form button {
-  width: 160px;
+  max-width: 160px;
+  width: 100%;
   height: 35px;
   border: solid 1px #000;
   border-radius: 10px;
@@ -552,6 +573,7 @@ video:not(:hover) {
 
 main {
   max-width: 1440px;
+  margin: auto;
 }
 
 .no-scroll {

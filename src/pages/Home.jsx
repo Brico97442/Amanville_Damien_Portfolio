@@ -19,8 +19,9 @@ function Home() {
       />
       <Section
         className="contact"
-        titleContent="Contact"
-        paragraphe="Une idée ? Un projet? Me contacter"
+        titleContent="Une idée ? Un projet ?"
+        link="/contact"
+        linkText="Me contacter"
       />
     </main>
   );

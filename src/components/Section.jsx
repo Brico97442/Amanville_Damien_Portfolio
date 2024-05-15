@@ -1,7 +1,7 @@
 import React from "react";
 import Servicecard from "./Servicecard";
 
-function Section({ className, titleContent, paragraphe }) {
+function Section({ className, titleContent, paragraphe, link, linkText }) {
   // Supposons que vous avez un tableau de données pour les cartes de service
   const serviceData = [
     {
@@ -33,6 +33,7 @@ function Section({ className, titleContent, paragraphe }) {
           <h1>{titleContent}</h1>
           <hr />
           <p>{paragraphe}</p>
+          <a href={link}>{linkText}</a>
           {className === "services-card" && (
             <div className="services-card">
               {serviceData.map((service, index) => (
