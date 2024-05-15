@@ -20,7 +20,7 @@ function Servicecard({ content, title, description,icon }) {
         <h2>{title}</h2>
         <div className="card-content-wrapper">
           <p>{description}</p>
-          <FontAwesomeIcon icon={icon} size="xl" />
+          <FontAwesomeIcon icon={icon} size="xl"/>
         </div>
         {isModalOpen && <CardModal closeModal={closeModal} content={content} linkText="Démarrer"/>}
       </div>

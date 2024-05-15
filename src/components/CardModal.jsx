@@ -25,7 +25,7 @@ function CardModal({ closeModal, content, link, linkText }) {
             className="side-modal-container-close-btn"
             onClick={handleClose}
           >
-            <FontAwesomeIcon icon={faTimes} size="xl" />
+            <FontAwesomeIcon icon={faTimes} size="l" />
           </button>
         </div>
       </div>
