@@ -1,20 +1,29 @@
 import React, { useState } from "react";
+import Career from "./Career";
+import Skills from "./Skills";
 
 function Test() {
   const [currentTab, setCurrentTab] = useState("competences"); // État pour représenter l'onglet actuellement sélectionné
 
   return (
-    <div id="skills">
+    <div id="select-wrapper">
+      <div className="button-wrapper">
+        <button className={currentTab === "competences" ? "active" : ""}>
+          <h2 onClick={() => setCurrentTab("competences")}>Compétences</h2>
+        </button>
+        <button className={currentTab === "career" ? "active" : ""}>
+          <h2 onClick={() => setCurrentTab("career")}>
+            Expériences professionnelles
+          </h2>
+        </button>
+      </div>
+
       <div className={currentTab === "competences" ? "competences" : "hidden"}>
-        <h1>Compétences</h1>
-        Le reste du gros chien  contenu de l'onglet 
+        <Skills />
       </div>
-      <div className={currentTab === "services" ? "competences" : "hidden"}>
-        <p>Les services que j'utilise</p>
-         Le rese du contenu de l'onglet "Services"
+      <div className={currentTab === "career" ? "carrer" : "hidden"}>
+        <Career />
       </div>
-      <button onClick={() => setCurrentTab("competences")}>Compétences</button>
-      <button onClick={() => setCurrentTab("services")}>Services</button>
     </div>
   );
 }
