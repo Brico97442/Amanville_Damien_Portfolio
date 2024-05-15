@@ -19,7 +19,7 @@ function Skills() {
       <div className="competences">
         <h1>Compétences</h1>
         <hr />
-        <p>J'ai déjà travailler avec :</p>
+        <p>J'ai déjà travailler avec</p>
         <div className="competences-wrapper">
           <div className="icons">
             <img src={jsImg} alt="Icône JS" />
@@ -48,7 +48,7 @@ function Skills() {
         </div>
       </div>
       <div className="competences">
-        <p>Les services que j'utilise :</p>
+        <p>Les services que j'utilise</p>
         <div className="competences-wrapper">
           <div className="icons">
             <img src={githubImg} alt="Icône GitHub" />

@@ -31,7 +31,7 @@ function Videocard({ content, title, video, description,link }) {
         <div className="video-description" onClick={openModal}>
           {description}
         </div>
-        {isModalOpen && <CardModal closeModal={closeModal} content={content} link={link}/>}
+        {isModalOpen && <CardModal closeModal={closeModal} content={content} link={link} linkText="Visitez le site"/>}
       </div>
     </div>
   );
