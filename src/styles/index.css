@@ -503,13 +503,19 @@ video:not(:hover) {
   align-items: center;
 }
 
-.services-cards {
+.services-card {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+}
+.services-card .section-content {
   padding: 20px;
 }
-.services-cards .card {
+.services-card .section-content-wrapper hr {
+  border: solid 1px #000;
+  margin: 20px;
+}
+.services-card .card {
   display: flex;
   justify-content: center;
   align-items: center;

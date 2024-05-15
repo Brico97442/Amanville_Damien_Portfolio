@@ -8,7 +8,7 @@ function Home() {
     <main className="home">
       <Welcome />
       <Section
-        paragraphe="Ceci est un ll!,nklmn,pmk,lm,lm,ml,ml,lm,m,ml! ;;ùml;mll$^lplp^lp"
+        paragraphe="Il faut que j'écrit quelque chose à propos de moi"
         className="about"
         titleContent="A propos"
       />

@@ -1,9 +1,17 @@
-.services-cards {
+.services-card {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 20px;
-
+  .section-content {
+    &-wrapper{
+      
+      hr {
+        border: solid 1px #000;
+        margin: 20px;
+      }
+    }
+    padding: 20px;
+  }
   .card {
     display: flex;
     justify-content: center;

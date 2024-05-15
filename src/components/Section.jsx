@@ -34,7 +34,7 @@ function Section({ className, titleContent, paragraphe }) {
           <p>{paragraphe}</p>
           <hr />
           {className === "services-card" && (
-            <div className="services-cards">
+            <div className="services-card">
               {serviceData.map((service, index) => (
                 <Servicecard
                   key={index}
