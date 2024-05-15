@@ -5,26 +5,25 @@
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
-  
   h2 {
     text-align: start;
     font-size: 2.2em;
   }
-  .animated{
+  .animated {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     width: 100%;
   }
-  
+
   .identity {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    
+
     img {
       object-fit: contain;
       max-width: 75%;
@@ -32,16 +31,17 @@
       border-radius: 25px;
     }
   }
-  
+
   &-content {
     max-width: 1440px;
     display: flex;
-    opacity:0;
+    opacity: 0;
     height: 0;
     flex-direction: column;
     justify-content: start;
-    animation: slideLeft 1.5s ease-out 20s normal none ,resetOpacity 2s 20s forwards;
-    
+    animation: slideLeft 1.5s ease-out 20s normal none,
+      resetOpacity 2s 20s forwards;
+
     h1 {
       font-weight: 400;
       font-size: 2em;
@@ -79,7 +79,7 @@
         transform: translateX(0);
       }
     }
-    
+
     @keyframes resetOpacity {
       to {
         opacity: 1;
@@ -138,13 +138,13 @@
     position: relative;
     display: flex;
   }
-  
+
   .animated-text span::before {
     content: "Amanville Damien";
     color: #0a0a0a;
     animation: words 20s;
   }
-  
+
   .animated-text span::after {
     content: "";
     position: absolute;
@@ -212,6 +212,34 @@
   @keyframes resetWidth {
     to {
       width: 0;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .welcome {
+    flex-wrap: nowrap;
+    align-items: center;
+    min-height: 84vh;
+    .animated {
+      .animated-text {
+        display: flex;
+        justify-content: center;
+      }
+      .welcome-content {
+        width: 100%;
+        h2 {
+          font-size: 3em;
+        }
+        h1 {
+          font-size: 2.5em;
+        }
+      }
+    }
+    .identity {
+      img {
+        max-width: 100%;
+      }
     }
   }
 }
