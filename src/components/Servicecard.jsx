@@ -20,7 +20,7 @@ function Servicecard({ content, title, description }) {
         <div className="card-content-wrapper">
           <p>{description}</p>
         </div>
-        {isModalOpen && <CardModal closeModal={closeModal} content={content} />}
+        {isModalOpen && <CardModal closeModal={closeModal} content={content} linkText="Démarrer"/>}
       </div>
     </div>
   );

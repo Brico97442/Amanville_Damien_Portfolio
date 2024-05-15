@@ -13,10 +13,7 @@ function Home() {
         titleContent="A propos"
       />
       <Skills />
-      <Section
-        className="services-card"
-        titleContent="Mes services"
-      />
+      <Section className="services-card" titleContent="Mes services" />
       <Section
         className="contact"
         titleContent="Une idée ? Un projet ?"
