@@ -31,8 +31,8 @@ function Section({ className, titleContent, paragraphe }) {
       <div className="section-content">
         <div className="section-content-wrapper">
           <h1>{titleContent}</h1>
-          <p>{paragraphe}</p>
           <hr />
+          <p>{paragraphe}</p>
           {className === "services-card" && (
             <div className="services-card">
               {serviceData.map((service, index) => (

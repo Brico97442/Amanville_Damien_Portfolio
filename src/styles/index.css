@@ -526,6 +526,20 @@ video:not(:hover) {
   position: relative;
 }
 
+.about {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.about .section-content {
+  width: 100%;
+  padding: 20px;
+}
+.about .section-content-wrapper hr {
+  border: solid 1px #000;
+  margin: 20px;
+}
+
 .App {
   display: flex;
   flex-direction: column;
