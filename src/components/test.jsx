@@ -7,7 +7,7 @@ function Test() {
 
   return (
     <div id="select-wrapper">
-      <h1>Compétences et Expériences Professionnelles</h1>
+      <h1>Compétences <br/>et<br/> expériences professionnelles</h1>
         <hr />
       <div className="button-wrapper">
         <button
