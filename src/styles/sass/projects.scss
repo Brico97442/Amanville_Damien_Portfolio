@@ -23,12 +23,14 @@
 }
 
 @media (min-width: 600px) {
-  
-    
-  
   .card-wrrapper{
 .card{
   max-width:47% ;
 }
   }
+}
+@media (min-width: 1024px) {
+.projects{
+  padding: 0 80px;
+}
 }

@@ -17,8 +17,6 @@ function Skills() {
   return (
     <div id="skills">
       <div className="competences">
-        <h1>Compétences</h1>
-        <hr />
         <p>J'ai déjà travailler avec</p>
         <div className="competences-wrapper">
           <div className="icons">

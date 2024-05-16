@@ -7,13 +7,14 @@
   border-radius: 15px;
   padding: 10px;
   position: relative;
-  
-  video {
-    transition: opacity 0.45s ease; /* Transition de l'opacité */
+  .video-description:hover {
+    cursor: pointer;
   }
-  
+  video {
+    transition: opacity .45s ease ; /* Transition de l'opacité */
+  }
 }
 
 video:not(:hover) {
-    opacity: 0.6; /* Opacité réduite lors du survol */
+  opacity: 0.6; /* Opacité réduite lors du survol */
 }

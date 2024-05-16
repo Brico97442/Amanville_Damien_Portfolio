@@ -154,7 +154,7 @@
     border-left: 2px solid #fff;
     right: -8px;
     animation: cursor 0.8s infinite, typing 10s steps(14),
-    resetWidth 0.1s 9s forwards;
+      resetWidth 0.1s 9s forwards;
   }
 
   @keyframes cursor {
@@ -240,6 +240,20 @@
     .identity {
       img {
         max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .welcome {
+    .identity {
+      img {
+        max-width: 85%;
+      }
+    }
+    .animated {
+      .welcome-content{
       }
     }
   }

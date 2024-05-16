@@ -7,6 +7,8 @@ function Test() {
 
   return (
     <div id="select-wrapper">
+      <h1>Compétences et Expériences Professionnelles</h1>
+        <hr />
       <div className="button-wrapper">
         <button
           className={currentTab === "competences" ? "active" : ""}
