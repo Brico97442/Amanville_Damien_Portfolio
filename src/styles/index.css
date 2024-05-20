@@ -121,7 +121,7 @@ header nav button.nav-link:hover {
 .welcome {
   display: flex;
   justify-content: center;
-  min-height: 81vh;
+  min-height: 85vh;
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;

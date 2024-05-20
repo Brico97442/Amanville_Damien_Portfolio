@@ -47,6 +47,7 @@ function Section({ className, titleContent, paragraphe, link, linkText }) {
                   title={service.title}
                   content={service.content}
                   icon={service.icon}
+                  link="/Contact"
                 />
               ))}
             </div>
