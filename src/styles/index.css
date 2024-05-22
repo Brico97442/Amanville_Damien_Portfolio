@@ -738,6 +738,18 @@ video:not(:hover) {
   background-attachment: fixed;
 }
 
+.github-item {
+  max-width: 30px;
+  max-height: 30px;
+  display: flex;
+  box-sizing: content-box;
+}
+.github-item img {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -755,12 +767,6 @@ main {
 
 .no-scroll {
   position: fixed;
-}
-
-@media (min-width: 1024px) {
-  main {
-    padding: 0 80px;
-  }
 }
 
 /*# sourceMappingURL=index.css.map */

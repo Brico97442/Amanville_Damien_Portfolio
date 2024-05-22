@@ -12,6 +12,7 @@
 @import "./services.scss";
 @import "./about.scss";
 @import "./parallaxe.scss";
+@import "./github-item.scss";
 
 .App {
   display: flex;
@@ -31,8 +32,8 @@ main {
   position: fixed;
 }
 
-@media (min-width: 1024px) {
-main{
-  padding: 0 80px;
-}
-}
+// @media (min-width: 1024px) {
+// main{
+//   padding: 0 80px;
+// }
+// }

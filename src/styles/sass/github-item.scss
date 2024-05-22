@@ -1,0 +1,12 @@
+.github-item {
+    max-width: 30px;
+    max-height: 30px;
+    display: flex;
+    box-sizing: content-box;
+    img{
+        object-fit: contain;
+    width: 100%;
+    height: auto;
+    }
+    
+  }
