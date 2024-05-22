@@ -7,8 +7,8 @@ import Parallaxe from "../components/Parallaxe";
 function Home() {
   return (
     <main className="home">
-      <Welcome />
       <Parallaxe/>
+      <Welcome />
       <Section
         paragraphe="Passionné de web avec une préférence pour l'UI design, mes compétences sont à votre disposition afin de réalisé vos projets web et de passer de l'idée à la réalité."
         className="about"
