@@ -494,8 +494,7 @@ video:not(:hover) {
     border-bottom-right-radius: 15px;
   }
   #select-wrapper {
-    padding: 0 50px;
-    max-width: 1050px;
+    max-width: 1440px;
   }
   #select-wrapper .button-wrapper {
     border-top-left-radius: 15px;
@@ -589,7 +588,7 @@ video:not(:hover) {
   gap: 20px;
 }
 .services-card .section-content {
-  padding: 20px;
+  width: 100%;
 }
 .services-card .section-content-wrapper hr {
   border: solid 1px #000;
