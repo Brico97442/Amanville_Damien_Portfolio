@@ -3,7 +3,7 @@ import Section from "../components/Section";
 import Test from "../components/test";
 import Parallaxe from "../components/Parallaxe";
 import GithubItem from "../components/GithubItem";
-
+import Projects from "./Projects"
 function Home() {
   return (
     <main className="home">
@@ -13,6 +13,7 @@ function Home() {
         className="about"
         titleContent="A propos de moi"
       />
+      <Projects/>
       <GithubItem/>
       <Test/>
       <Section className="services-card" titleContent="Mes services" />
