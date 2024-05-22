@@ -6,7 +6,7 @@ function GithubItem() {
   return (
     <section className="github-item">
       <p>Vous pouvez retrouver l'ensemble mes projets sur</p>
-      <Link to="https://github.com/Brico97442">
+      <Link to="https://github.com/Brico97442" target="blank">
         <p>Mon Github</p>
       </Link>
       <div className="github-item-wrapper">
