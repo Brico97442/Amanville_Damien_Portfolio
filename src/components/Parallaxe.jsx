@@ -1,9 +1,10 @@
 import React from "react";
+import Welcome from "./Welcome";
 
 function Parallaxe() {
   return (
     <section id="parallaxe" className="parallaxe">
-      <h1>Développeur Web<br/>Front-End</h1>
+      <Welcome/>
     </section>
   );
 }

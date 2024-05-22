@@ -1,13 +1,11 @@
 #parallaxe {
     display: flex;
-    min-height: 40vh;
+    min-height: 70vh;
     justify-content: center;
     align-items: end;
-    font-size: 58px;
     color: #fff;
-    background-image: url("../img/assets/img/water.jpg");
+    background-image: url("../img/assets/img/damien2.png");
     background-size:cover ;
     background-position: center;
-
     background-attachment: fixed;
 }

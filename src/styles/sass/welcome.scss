@@ -1,10 +1,10 @@
 .welcome {
   display: flex;
   justify-content: center;
-  min-height: 85vh;
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
+  
   h2 {
     text-align: start;
     font-size: 2.2em;
@@ -38,14 +38,13 @@
     opacity: 0;
     height: 0;
     flex-direction: column;
-    justify-content: start;
-    animation: slideLeft 1.5s ease-out 10s normal none,
-      resetOpacity 2s 10s forwards;
+    justify-content: end;
+    animation: slideLeft 1.5s ease-out forwards ;
 
     h1 {
       font-weight: 400;
       font-size: 2em;
-      color: #363636;
+      color: #fff;
     }
 
     @keyframes translateRight {
@@ -61,35 +60,26 @@
     }
 
     h2 {
-      color: #0a0a0a;
+      color: #fff;
       font-size: 2.6em;
-      animation: translateRight 1.5s ease 10s 1 normal forwards;
+      animation: translateRight 1.5s ease 1 normal forwards;
     }
 
     @keyframes slideLeft {
       0% {
         opacity: 0;
-        height: 0;
         transform: translateX(12vw);
       }
 
       100% {
         opacity: 1;
-        height: 100%;
         transform: translateX(0);
-      }
-    }
-
-    @keyframes resetOpacity {
-      to {
-        opacity: 1;
-        height: 100%;
       }
     }
 
     p {
       font-size: 2.2em;
-      color: #1c1c1c;
+      color: #fff;
     }
 
     .welcome-subtitle {
@@ -123,7 +113,7 @@
         display: inline-block;
         width: 2em; /* Ajustez la largeur selon vos besoins */
         height: 0.125em; /* Ajustez la hauteur selon vos besoins */
-        background-color: black; /* Couleur de l'underscore */
+        background-color: #fff; /* Couleur de l'underscore */
         animation: blink 1s infinite;
       }
     }
@@ -138,80 +128,10 @@
     position: relative;
     display: flex;
   }
-
-  .animated-text span::before {
-    content: "Amanville Damien";
-    color: #0a0a0a;
-    animation: words 10s;
-  }
-
-  .animated-text span::after {
-    content: "";
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    background-color: #fff;
-    border-left: 2px solid #fff;
-    right: -8px;
-    animation: cursor 0.8s infinite, typing 10s steps(14),
-      resetWidth 0.1s 9s forwards;
-  }
-
+  
   @keyframes cursor {
     to {
       border-left: 2px solid #fff;
-    }
-  }
-
-  @keyframes words {
-    0%,
-    20% {
-      content: "Mon nom est Amanville Damien";
-    }
-    21%,
-    40% {
-      content: "Bienvenue sur mon portfolio";
-    }
-    41%,
-    60% {
-      content: "Passionné de nouvelles technos";
-    }
-    61%,
-    80% {
-      content: "Et aussi d'impression 3D";
-    }
-    81%,
-    100% {
-      content: "Mais ça c'est une autre histoire !";
-    }
-  }
-  @keyframes typing {
-    10%,
-    15%,
-    30%,
-    35%,
-    50%,
-    55%,
-    70%,
-    75%,
-    90% {
-      width: 0;
-    }
-    5%,
-    20%,
-    25%,
-    40%,
-    45%,
-    60%,
-    65%,
-    80%,
-    85% {
-      width: calc(100% + 8px);
-    }
-  }
-  @keyframes resetWidth {
-    to {
-      width: 0;
     }
   }
 }
@@ -219,16 +139,10 @@
 @media (min-width: 600px) {
   .welcome {
     flex-wrap: nowrap;
-    align-items: center;
-    min-height: 85vh;
+    align-items: end;
     .animated {
-      .animated-text {
-        display: flex;
-        justify-content: center;
-      }
       .welcome-content {
         width: 100%;
-        max-width: 350px;
         h2 {
           font-size: 3em;
         }
@@ -250,10 +164,6 @@
     .identity {
       img {
         max-width: 85%;
-      }
-    }
-    .animated {
-      .welcome-content{
       }
     }
   }
