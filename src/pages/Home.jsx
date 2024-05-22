@@ -2,6 +2,7 @@ import React from "react";
 import Section from "../components/Section";
 import Test from "../components/test";
 import Parallaxe from "../components/Parallaxe";
+import GithubItem from "../components/GithubItem";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
         className="about"
         titleContent="A propos de moi"
       />
+      <GithubItem/>
       <Test/>
       <Section className="services-card" titleContent="Mes services" />
       <Section

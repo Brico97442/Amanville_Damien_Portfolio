@@ -704,6 +704,15 @@ video:not(:hover) {
   }
 }
 .github-item {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.github-item a {
+  color: #000;
+}
+.github-item-wrapper {
   max-width: 30px;
   max-height: 30px;
   display: flex;
