@@ -471,6 +471,7 @@ video:not(:hover) {
 #select-wrapper .button-wrapper button.active {
   background-color: #f5f5f5;
   color: #000;
+  text-decoration: underline;
 }
 #select-wrapper .hidden {
   display: none;
@@ -706,14 +707,26 @@ video:not(:hover) {
 }
 .github-item {
   display: flex;
-  gap: 5px;
+  flex-direction: column;
+  gap: 10px;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  margin-top: 20px;
 }
 .github-item a {
-  color: #000;
+  color: #fff;
 }
 .github-item-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #adb5bd;
+  border-radius: 15px;
+  padding: 10px;
+}
+.github-item-wrapper .icon-container {
   max-width: 30px;
   max-height: 30px;
   display: flex;

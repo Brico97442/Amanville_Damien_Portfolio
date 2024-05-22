@@ -1,18 +1,30 @@
 .github-item {
   display: flex;
-  gap: 5px;
+  flex-direction: column;
+  gap: 10px;
   align-items: center;
   justify-content: center;
-
-  a {
-    color: #000;
-  }
+  text-align: center;
+  padding: 0 20px;
+  margin-top: 20px;
   
+  a {
+    color: #fff;
+  }
+
   &-wrapper {
-    max-width: 30px;
-    max-height: 30px;
     display: flex;
-    box-sizing: content-box;
+    align-items: center;
+    justify-content: center;
+    background-color: #adb5bd;
+    border-radius: 15px;
+    padding: 10px;
+    .icon-container {
+      max-width: 30px;
+      max-height: 30px;
+      display: flex;
+      box-sizing: content-box;
+    }
   }
 
   img {

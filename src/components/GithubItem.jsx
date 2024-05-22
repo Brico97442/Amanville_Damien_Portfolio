@@ -5,12 +5,14 @@ import githubImg from "../img/assets/github2.png";
 function GithubItem() {
   return (
     <section className="github-item">
-      <p>Vous pouvez retrouver l'ensemble mes projets sur</p>
-      <Link to="https://github.com/Brico97442" target="blank">
-        <p>Mon Github</p>
-      </Link>
+      <p>Retrouvez l'ensemble de mes projets sur</p>
       <div className="github-item-wrapper">
-        <img src={githubImg} alt="Icône GitHub" />
+        <Link to="https://github.com/Brico97442" target="blank">
+          <p>Mon Github</p>
+        </Link>
+        <div className="icon-container">
+          <img src={githubImg} alt="Icône GitHub" />
+        </div>
       </div>
     </section>
   );
