@@ -3,6 +3,7 @@
   flex-direction: column;
   padding: 20px;
   background-color: #f5f5f5;
+  gap: 20px;
 
   .competences {
     display: flex;
@@ -13,6 +14,7 @@
     p {
       font-weight: 500;
     }
+    
     .competences-wrapper {
       background-color: #bcbcbc;
       display: flex;
@@ -21,7 +23,7 @@
       gap: 10px;
       padding: 20px;
       border-radius: 15px;
-      
+
       .icons {
         display: flex;
         max-width: 50px;
@@ -40,6 +42,7 @@
 
 #select-wrapper {
   margin: auto;
+
   h1 {
     font-size: 24px;
   }
@@ -65,11 +68,11 @@
       background-color: #000;
       color: #f5f5f5;
       cursor: pointer;
-      
+
       h2 {
         font-size: 12px;
       }
-      
+
       &.active {
         background-color: #f5f5f5;
         color: #000;
@@ -99,15 +102,24 @@
 }
 @media (min-width: 1024px) {
   #skills {
+    
     .competences {
       border-bottom-left-radius: 15px;
       border-bottom-right-radius: 15px;
+      
+      &-wrapper{
+        border-radius: 0;
+      }
     }
+
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
   }
+
   #select-wrapper {
     max-width: 1440px;
+    margin-bottom: 50px;
+
     .button-wrapper {
       border-top-left-radius: 15px;
       border-top-right-radius: 15px;

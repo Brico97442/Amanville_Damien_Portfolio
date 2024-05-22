@@ -36,7 +36,6 @@
     max-width: 1440px;
     display: flex;
     opacity: 0;
-    height: 0;
     flex-direction: column;
     justify-content: end;
     animation: slideLeft 1.5s ease-out forwards ;
@@ -140,6 +139,7 @@
   .welcome {
     flex-wrap: nowrap;
     align-items: end;
+    
     .animated {
       .welcome-content {
         width: 100%;
@@ -161,6 +161,9 @@
 
 @media (min-width: 1024px) {
   .welcome {
+    justify-content: end;
+    margin-right: 15vw;
+
     .identity {
       img {
         max-width: 85%;
