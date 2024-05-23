@@ -6,34 +6,27 @@ import Sidemodal from "./components/Sidemodal";
 import Projects from "./pages/Projects";
 import Footer from "./components/Footer";
 import Notfound from "./pages/Notfound";
-import Contact from "./pages/Contact"
+import Contact from "./pages/Contact";
 import "./styles/index.css";
 
 function App() {
-  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openModal = () => {
-    setIsModalOpen(true);
-    console.log("titi")
-  };
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
-  const closeModal = () => {
-      setIsModalOpen(false);
-      console.log("tata");
-  };
-  
   return (
-    <div className={`App ${isModalOpen ? 'no-scroll' : ''}`}>
+    <div className="App">
       <Router>
-        <Header openModal={openModal} /> 
-        {isModalOpen && <Sidemodal closeModal={closeModal} isOpen={isModalOpen} />}
+        <Header openModal={openModal} />
         <Routes>
-          <Route path="/" exact element={<Home />} />
-          <Route path="/Projects" element={<Projects />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/*" element={<Notfound />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Notfound />} />
         </Routes>
-        <Footer/>
+        <Footer />
+        <Sidemodal isOpen={isModalOpen} closeModal={closeModal} />
       </Router>
     </div>
   );

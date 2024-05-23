@@ -51,7 +51,7 @@ header nav button.nav-link:hover {
   justify-content: center;
   align-items: center;
   background-color: #bcbcbc;
-  position: absolute;
+  position: fixed;
   z-index: 200;
   top: 0;
   right: 0;
@@ -90,33 +90,19 @@ header nav button.nav-link:hover {
 .side-modal nav a.nav-link:hover {
   text-decoration: underline;
 }
-.side-modal.open {
-  animation: openModal 0.5s ease-in-out 0s 1 normal forwards;
-  overflow: hidden; /* Empêche le défilement */
+
+.no-scroll {
+  overflow: hidden;
 }
-.side-modal.close {
-  animation: closeModal 0.5s ease-in 0s 1 normal forwards;
-  display: none;
-}
-@keyframes openModal {
-  0% {
-    transform: scaleX(0);
-    transform-origin: 100% 100%;
-  }
-  100% {
-    transform: scaleX(1);
-    transform-origin: 100% 100%;
-  }
-}
-@keyframes closeModal {
-  0% {
-    transform: scaleX(1);
-    transform-origin: 100% 100%;
-  }
-  100% {
-    transform: scaleX(0);
-    transform-origin: 100% 100%;
-  }
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
 }
 
 .welcome {
