@@ -16,6 +16,8 @@ function Skills() {
   // Recevoir la fonction openModal en tant que prop
   return (
     <div id="skills">
+      <h2>Mes compétences</h2>
+      <hr />
       <div className="competences">
         <p>J'ai déjà travailler avec</p>
         <div className="competences-wrapper">

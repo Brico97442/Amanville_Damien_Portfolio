@@ -26,13 +26,19 @@
 .no-scroll {
   position: fixed;
 }
-hr {
-  border: solid 1px #000;
-  margin: 20px;
+.divider{
+  padding: 20px 0;
+  hr {
+    border: solid 1px #000;
+    margin: auto;
+    max-width: 650px;
+    width: 100%;
+    
+  }
 }
 
 @media (min-width: 1024px) {
 hr{
-  margin: 30px;
+  margin: auto;
 }
 }

@@ -4,18 +4,19 @@ import videoData1 from "../img/ninacarducci.webm";
 import videoData2 from "../img/ohmyfood.webm";
 
 function Projects() {
-  
   return (
     <main className="projects" id="projects">
-      <h2 >Mes projets</h2>
-      <hr />
+      <h2>Mes projets</h2>
+      <div className="divider">
+        <hr />
+      </div>
       <div className="card-wrrapper">
         <Videocard
           title="Nina Carducci"
           description="Le site d'une photographe"
           video={videoData1}
           content="Ce site présente le travail de Nina Carducci, une jeune photographe talentueuse et passionnée. Au programme Optimisation SEO, Amélioration des performances du site, et mise en place des métadonnées."
-          link="https://brico97442.github.io/NinaCarducci/"        
+          link="https://brico97442.github.io/NinaCarducci/"
         />
         <Videocard
           title="Oh My Food"

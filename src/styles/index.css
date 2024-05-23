@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -26,7 +27,7 @@ header nav {
   align-items: center;
   justify-content: space-between;
   font-size: 18px;
-  padding: 30px;
+  margin: 30px;
 }
 header nav button {
   display: flex;
@@ -336,7 +337,7 @@ video:not(:hover) {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  width: 100%;
+  padding: 0 20px;
   margin-bottom: 30px;
   max-width: 1440px;
   margin: auto;
@@ -439,6 +440,7 @@ video:not(:hover) {
 #select-wrapper {
   margin: auto;
   margin-top: 30px;
+  padding: 0 20px;
 }
 #select-wrapper h1 {
   font-size: 24px;
@@ -598,7 +600,7 @@ video:not(:hover) {
 }
 .services-card .section-content {
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .services-card .card {
   display: flex;
@@ -643,7 +645,6 @@ video:not(:hover) {
 @media (min-width: 600px) {
   .services-card {
     cursor: pointer;
-    margin-bottom: 50px;
   }
   .services-card .section-content {
     width: 100%;
@@ -758,14 +759,19 @@ video:not(:hover) {
   position: fixed;
 }
 
-hr {
+.divider {
+  padding: 20px 0;
+}
+.divider hr {
   border: solid 1px #000;
-  margin: 20px;
+  margin: auto;
+  max-width: 650px;
+  width: 100%;
 }
 
 @media (min-width: 1024px) {
   hr {
-    margin: 30px;
+    margin: auto;
   }
 }
 

@@ -8,13 +8,15 @@ function Test() {
   return (
     <div id="select-wrapper">
       <h1>Compétences <br/>et<br/> expériences professionnelles</h1>
+      <div className="divider">
         <hr />
+      </div>
       <div className="button-wrapper">
         <button
           className={currentTab === "competences" ? "active" : ""}
           onClick={() => setCurrentTab("competences")}
         >
-          <h2>Compétences</h2>
+          <h2>Mes compétences</h2>
         </button>
         <button
           className={currentTab === "career" ? "active" : ""}

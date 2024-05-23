@@ -8,14 +8,7 @@
 
   .section-content {
     padding: 20px;
-    margin-bottom: 20px;
-
-    // &-wrapper {
-    //   hr {
-    //     border: solid 1px #000;
-    //     margin: 20px;
-    //   }
-    // }
+    margin-bottom: 50px;
   }
 
   .card {
@@ -65,8 +58,6 @@
 @media (min-width: 600px) {
   .services-card {
     cursor: pointer;
-    margin-bottom: 50px;
-
     .section-content {
       width: 100%;
       padding: 0;
