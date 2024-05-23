@@ -26,7 +26,7 @@ const projectData = [
     description: "Application d'hébergements",
     url: kasaImg,
     content: "Kasa est un projet d'application permettant au particulier de réserver un hébergement.",
-    link: "https://brico97442.github.io/OhMyFood/"
+    link: "https://kasa-navy-beta.vercel.app/"
   },
   {
     title: "Sophie Bluel Architecte",
