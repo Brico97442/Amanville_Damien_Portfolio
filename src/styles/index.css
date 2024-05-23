@@ -741,10 +741,6 @@ video:not(:hover) {
   padding-top: 110px;
 }
 
-.no-scroll {
-  position: fixed;
-}
-
 .divider {
   padding: 20px 0;
 }
