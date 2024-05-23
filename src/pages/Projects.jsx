@@ -6,8 +6,8 @@ import videoData2 from "../img/ohmyfood.webm";
 function Projects() {
   
   return (
-    <main className="projects">
-      <h2>Mes projets</h2>
+    <main className="projects" id="projects">
+      <h2 >Mes projets</h2>
       <hr />
       <div className="card-wrrapper">
         <Videocard

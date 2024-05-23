@@ -5,18 +5,22 @@
   margin-bottom: 30px;
   max-width: 1440px;
   margin: auto;
+  
   .section-content {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     padding: 20px;
+
     &-wrapper {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      h1 {
-        margin-bottom: 20px;
+      p{
+        max-width: 70%;
+        text-align: justify;
+        margin: auto;
       }
       // hr {
       //   border: solid 1px #000;
@@ -28,6 +32,10 @@
 
 @media (min-width: 600px) {
   .about {
-    min-height: 20vw;
+    min-height: 25vh;
+    .section-content{
+      padding: 0;
+      width: 100%;
+    }
   }
 }

@@ -13,6 +13,9 @@
   video {
     transition: opacity .45s ease ; /* Transition de l'opacité */
   }
+  h2{
+    font-size: 18px;
+  }
 }
 
 video:not(:hover) {

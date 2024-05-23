@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import CardModal from "./CardModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function Servicecard({ content, title, description,icon,link}) {
+function Servicecard({ content, title, description,icon,link,imageUrl}) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
@@ -22,6 +22,7 @@ function Servicecard({ content, title, description,icon,link}) {
           <p>{description}</p>
           <FontAwesomeIcon icon={icon} size="xl"/>
         </div>
+        <img src={imageUrl} alt="illustration de la card"/>
         {isModalOpen && <CardModal closeModal={closeModal} content={content} linkText="Me contacter" link={link} />}
       </div>
     </div>

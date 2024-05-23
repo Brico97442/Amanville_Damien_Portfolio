@@ -292,6 +292,9 @@ footer section {
 .card-video video {
   transition: opacity 0.45s ease; /* Transition de l'opacité */
 }
+.card-video h2 {
+  font-size: 18px;
+}
 
 video:not(:hover) {
   opacity: 0.6; /* Opacité réduite lors du survol */
@@ -335,12 +338,15 @@ video:not(:hover) {
   gap: 20px;
   width: 100%;
   margin-bottom: 30px;
+  max-width: 1440px;
+  margin: auto;
 }
 .contact .section-content {
-  padding: 20px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 .contact .section-content-wrapper {
-  width: 100%;
+  max-width: 100%;
 }
 .contact .section-content-wrapper a {
   color: #000;
@@ -521,6 +527,9 @@ video:not(:hover) {
 .card-video video {
   transition: opacity 0.45s ease; /* Transition de l'opacité */
 }
+.card-video h2 {
+  font-size: 18px;
+}
 
 video:not(:hover) {
   opacity: 0.6; /* Opacité réduite lors du survol */
@@ -589,6 +598,7 @@ video:not(:hover) {
 }
 .services-card .section-content {
   padding: 20px;
+  margin-bottom: 20px;
 }
 .services-card .card {
   display: flex;
@@ -605,17 +615,29 @@ video:not(:hover) {
 .services-card .card-content {
   display: flex;
   flex-direction: column;
-  gap: 10px;
   padding: 20px;
 }
+.services-card .card-content img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  border-radius: 10px;
+  object-fit: cover;
+}
 .services-card .card-content h2 {
-  font-size: 22px;
+  font-size: 18px;
   text-align: center;
+  z-index: 2;
 }
 .services-card .card-content-wrapper {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  z-index: 2;
 }
 
 @media (min-width: 600px) {
@@ -655,13 +677,19 @@ video:not(:hover) {
   flex-direction: column;
   justify-content: center;
 }
-.about .section-content-wrapper h1 {
-  margin-bottom: 20px;
+.about .section-content-wrapper p {
+  max-width: 70%;
+  text-align: justify;
+  margin: auto;
 }
 
 @media (min-width: 600px) {
   .about {
-    min-height: 20vw;
+    min-height: 25vh;
+  }
+  .about .section-content {
+    padding: 0;
+    width: 100%;
   }
 }
 #parallaxe {
@@ -733,6 +761,12 @@ video:not(:hover) {
 hr {
   border: solid 1px #000;
   margin: 20px;
+}
+
+@media (min-width: 1024px) {
+  hr {
+    margin: 30px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

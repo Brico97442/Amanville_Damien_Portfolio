@@ -9,7 +9,7 @@ function Home() {
     <main className="home">
       <Parallaxe/>
       <Section
-        paragraphe="Passionné de web avec une préférence pour l'UI design, mes compétences sont à votre disposition afin de réaliser vos projets web et de passer de l'idée à la réalité."
+        paragraphe="Bonjour, mon nom est Amanville Damien, je suis passionné de web avec une préférence pour l'UI design, mes compétences sont à votre disposition afin de réaliser vos projets web et de passer de l'idée à la réalité."
         className="about"
         titleContent="A propos de moi"
       />
