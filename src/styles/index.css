@@ -301,10 +301,8 @@ video:not(:hover) {
   display: flex;
   flex-direction: column;
   padding: 20px;
-}
-.projects hr {
-  border: solid 1px #000;
-  margin: 20px;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .card-wrrapper {
@@ -343,10 +341,6 @@ video:not(:hover) {
 }
 .contact .section-content-wrapper {
   width: 100%;
-}
-.contact .section-content-wrapper hr {
-  border: solid 1px #000;
-  margin: 20px;
 }
 .contact .section-content-wrapper a {
   color: #000;
@@ -443,10 +437,6 @@ video:not(:hover) {
 #select-wrapper h1 {
   font-size: 24px;
 }
-#select-wrapper hr {
-  border: solid 1px #000;
-  margin: 20px;
-}
 #select-wrapper .button-wrapper {
   display: flex;
   margin: auto;
@@ -482,10 +472,6 @@ video:not(:hover) {
   gap: 20px;
   padding: 20px;
   background-color: #f5f5f5;
-}
-#select-wrapper .career hr {
-  border: solid 1px #000;
-  margin: 0 20px;
 }
 #select-wrapper .career span {
   text-decoration: underline;
@@ -604,10 +590,6 @@ video:not(:hover) {
 .services-card .section-content {
   padding: 20px;
 }
-.services-card .section-content-wrapper hr {
-  border: solid 1px #000;
-  margin: 20px;
-}
 .services-card .card {
   display: flex;
   justify-content: center;
@@ -675,10 +657,6 @@ video:not(:hover) {
 }
 .about .section-content-wrapper h1 {
   margin-bottom: 20px;
-}
-.about .section-content-wrapper hr {
-  border: solid 1px #000;
-  margin: 20px;
 }
 
 @media (min-width: 600px) {
@@ -750,6 +728,11 @@ video:not(:hover) {
 
 .no-scroll {
   position: fixed;
+}
+
+hr {
+  border: solid 1px #000;
+  margin: 20px;
 }
 
 /*# sourceMappingURL=index.css.map */

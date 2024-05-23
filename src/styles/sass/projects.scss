@@ -2,11 +2,12 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
-
-  hr {
-    border: solid 1px #000;
-    margin: 20px;
-  }
+  max-width: 1440px;
+  margin: auto;
+  // hr {
+  //   border: solid 1px #000;
+  //   margin: 20px;
+  // }
 }
 .card-wrrapper {
   width: 100%;
@@ -15,7 +16,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 40px;
-  
+
   .card {
     background-color: #adb5bd;
     border-radius: 15px;
@@ -23,14 +24,14 @@
 }
 
 @media (min-width: 600px) {
-  .card-wrrapper{
-.card{
-  max-width:47% ;
-}
+  .card-wrrapper {
+    .card {
+      max-width: 47%;
+    }
   }
 }
 @media (min-width: 1024px) {
-.projects{
-  padding: 0 80px;
-}
+  .projects {
+    padding: 0 80px;
+  }
 }
