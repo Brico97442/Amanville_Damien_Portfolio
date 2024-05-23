@@ -272,12 +272,15 @@ footer section {
   border-radius: 15px;
   padding: 10px;
   position: relative;
+  background-color: #bcbcbc;
 }
 .card-video .video-description:hover {
   cursor: pointer;
 }
-.card-video video {
-  transition: opacity 0.45s ease; /* Transition de l'opacité */
+.card-video img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 .card-video h2 {
   font-size: 18px;
@@ -287,6 +290,11 @@ video:not(:hover) {
   opacity: 0.6; /* Opacité réduite lors du survol */
 }
 
+@media (min-width: 600px) {
+  .card {
+    max-width: 45%;
+  }
+}
 .projects {
   display: flex;
   flex-direction: column;
@@ -294,8 +302,7 @@ video:not(:hover) {
   max-width: 1440px;
   margin: auto;
 }
-
-.card-wrrapper {
+.projects .card-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -303,16 +310,7 @@ video:not(:hover) {
   flex-wrap: wrap;
   gap: 40px;
 }
-.card-wrrapper .card {
-  background-color: #adb5bd;
-  border-radius: 15px;
-}
 
-@media (min-width: 600px) {
-  .card-wrrapper .card {
-    max-width: 47%;
-  }
-}
 @media (min-width: 1024px) {
   .projects {
     padding: 0 80px;
@@ -508,12 +506,15 @@ video:not(:hover) {
   border-radius: 15px;
   padding: 10px;
   position: relative;
+  background-color: #bcbcbc;
 }
 .card-video .video-description:hover {
   cursor: pointer;
 }
-.card-video video {
-  transition: opacity 0.45s ease; /* Transition de l'opacité */
+.card-video img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 .card-video h2 {
   font-size: 18px;
@@ -523,6 +524,11 @@ video:not(:hover) {
   opacity: 0.6; /* Opacité réduite lors du survol */
 }
 
+@media (min-width: 600px) {
+  .card {
+    max-width: 45%;
+  }
+}
 .card-modal {
   display: none;
   position: absolute;

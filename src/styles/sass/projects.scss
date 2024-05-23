@@ -5,28 +5,17 @@
   max-width: 1440px;
   margin: auto;
   
-}
-.card-wrrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 40px;
-
-  .card {
-    background-color: #adb5bd;
-    border-radius: 15px;
+  .card-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
   }
 }
 
-@media (min-width: 600px) {
-  .card-wrrapper {
-    .card {
-      max-width: 47%;
-    }
-  }
-}
+
 @media (min-width: 1024px) {
   .projects {
     padding: 0 80px;
