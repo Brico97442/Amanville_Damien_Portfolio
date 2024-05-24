@@ -11,7 +11,6 @@ function Servicecard({ content, title, description,icon,imageUrl}) {
 
   const closeModal = () => {
     setIsModalOpen(false);
-    console.log("titi");
   };
 
   return (
@@ -23,7 +22,7 @@ function Servicecard({ content, title, description,icon,imageUrl}) {
           <FontAwesomeIcon icon={icon} size="xl"/>
         </div>
         <img src={imageUrl} alt="illustration de la card"/>
-        {isModalOpen && <CardModal closeModal={closeModal} content={content} link="/contact" showNavLink="true"  linkText="Me contacter" linkSubtitle="Me contacter"/>}
+        {isModalOpen && <CardModal closeModal={closeModal} content={content} link="/contact" showNavLink="true"  linkText="Me contacter"/>}
       </div>
     </div>
   );

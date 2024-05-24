@@ -5,8 +5,7 @@ import "../styles/sass/cardmodal.scss";
 import GithubItem from "./GithubItem";
 
 function CardModal({ closeModal, content, link, linkText, icon, showNavLink,githubLink,linkSubtitle }) {
-  const handleClose = (event) => {
-    event.stopPropagation(); // Empêche la propagation de l'événement de clic à l'élément parent
+  const handleClose = () => {
     closeModal();
   };
 
@@ -21,7 +20,7 @@ function CardModal({ closeModal, content, link, linkText, icon, showNavLink,gith
           <div className="button-wrapper">
             <GithubItem linkSubtitle={linkSubtitle} githubLink={githubLink}/>
             {showNavLink && (
-              <NavLink to={link} target="_blank" className="nav-link">
+              <NavLink to={link} className="nav-link">
                 {linkText}
               </NavLink>
             )}
@@ -30,7 +29,7 @@ function CardModal({ closeModal, content, link, linkText, icon, showNavLink,gith
             className="side-modal-container-close-btn"
             onClick={handleClose}
           >
-            <FontAwesomeIcon icon={icon} size="lg" />
+            <FontAwesomeIcon icon={icon} size="l" />
           </button>
         </div>
       </div>
