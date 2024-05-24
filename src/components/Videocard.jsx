@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import CardModal from "./CardModal";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import IconItems from "./IconItems";
 
-function Videocard({ content, title, websiteScreenshot, description, link, showNavLink,githubLink,linkSubtitle }) {
+function Videocard({ content, title, websiteScreenshot, description, link, showNavLink,githubLink,linkSubtitle,iconUrls }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
@@ -19,6 +20,7 @@ function Videocard({ content, title, websiteScreenshot, description, link, showN
         <h2>{title}</h2>
         <img src={websiteScreenshot} alt="illustration du site" />
         <div className="video-description">{description}</div>
+        <IconItems iconUrls={iconUrls}/>
         {isModalOpen && (
           <CardModal
             closeModal={closeModal}

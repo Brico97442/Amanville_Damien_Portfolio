@@ -131,7 +131,8 @@ header nav button.nav-link:hover {
   gap: 10px;
 }
 .welcome .identity img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   max-width: 75%;
   height: auto;
   border-radius: 25px;
@@ -278,7 +279,8 @@ footer section {
   cursor: pointer;
 }
 .card-video img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 100%;
   height: 100%;
 }
@@ -393,16 +395,6 @@ video:not(:hover) {
   gap: 20px;
   background-color: #f5f5f5;
 }
-#skills .competences .icon-items {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-#skills .competences .icon-items-wrapper {
-  padding: 20px;
-  flex-wrap: wrap;
-  border-radius: 15px;
-}
 #skills .competences p {
   font-weight: 500;
 }
@@ -422,7 +414,8 @@ video:not(:hover) {
   max-height: 50px;
 }
 #skills .competences .competences-wrapper .icons img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 100%;
   height: auto;
 }
@@ -518,7 +511,8 @@ video:not(:hover) {
   cursor: pointer;
 }
 .card-video img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 100%;
   height: 100%;
 }
@@ -642,7 +636,8 @@ video:not(:hover) {
   left: 0;
   opacity: 0.4;
   border-radius: 10px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .services-card .card-content h2 {
   font-size: 18px;
@@ -753,23 +748,14 @@ video:not(:hover) {
   box-sizing: content-box;
 }
 .github-item img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 100%;
   height: auto;
 }
 
-.icon-items-wrapper {
+.icon-items {
   display: flex;
-  gap: 10px;
-  justify-content: center;
-  background-color: #bcbcbc;
-}
-.icon-items-wrapper img {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-  max-width: 40px;
-  max-height: 40px;
 }
 
 .App {
@@ -796,6 +782,4 @@ video:not(:hover) {
   hr {
     margin: auto;
   }
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */

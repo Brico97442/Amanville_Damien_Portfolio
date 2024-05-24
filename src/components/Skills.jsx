@@ -11,55 +11,20 @@ import html5Img from "../img/assets/html5.png";
 import githubImg from "../img/assets/github.png";
 import vercelImg from "../img/assets/vercel.png";
 import ghpImg from "../img/assets/ghpages.svg";
+import IconItems from "./IconItems";
 
 function Skills() {
-  // Recevoir la fonction openModal en tant que prop
+  const iconUrls1=[jsImg, html5Img,reactImg,reduxImg,sassImg,mongodbImg,reactRouterImg,cssImg]
+  const iconUrls2=[githubImg,vercelImg,ghpImg]
   return (
     <div id="skills">
       <h2>Mes compétences</h2>
       <hr />
       <div className="competences">
-        <p>J'ai déjà travailler avec</p>
-        <div className="competences-wrapper">
-          <div className="icons">
-            <img src={jsImg} alt="Icône JS" />
-          </div>
-          <div className="icons">
-            <img src={reduxImg} alt="Icône Redux" />
-          </div>
-          <div className="icons">
-            <img src={sassImg} alt="Icône Sass" />
-          </div>
-          <div className="icons">
-            <img src={mongodbImg} alt="Icône MongoDB" />
-          </div>
-          <div className="icons">
-            <img src={html5Img} alt="Icône HTML5" />
-          </div>
-          <div className="icons">
-            <img src={reactImg} alt="Icône React" />
-          </div>
-          <div className="icons">
-            <img src={reactRouterImg} alt="Icône React Router" />
-          </div>
-          <div className="icons">
-            <img src={cssImg} alt="Icône CSS" />
-          </div>
-        </div>
+        <IconItems iconTitle="J'ai déjà travailler avec" iconUrls={iconUrls1}/>
       </div>
       <div className="competences">
-        <p>Les services que j'utilise</p>
-        <div className="competences-wrapper">
-          <div className="icons">
-            <img src={githubImg} alt="Icône GitHub" />
-          </div>
-          <div className="icons">
-            <img src={vercelImg} alt="Icône GitHub" />
-          </div>
-          <div className="icons">
-            <img src={ghpImg} alt="Icône GitHub Pages" />
-          </div>
-        </div>
+      <IconItems iconTitle="Les services que j'utilise" iconUrls={iconUrls2}/>
       </div>
     </div>
   );

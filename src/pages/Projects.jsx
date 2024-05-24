@@ -6,6 +6,13 @@ import ohmyfoodImg from "../img/ohmyfood.png";
 import kasaImg from "../img/kasa.png";
 import sophieBluelImg from "../img/sophie_bluel.png";
 import argentBankImg from "../img/argent-bank.png";
+import cssImg from "../img/assets/css.png";
+import html5Img from "../img/assets/html5.png";
+import reactImg from "../img/assets/react.png";
+import mongodbImg from "../img/assets/mongodb.png";
+import sassImg from "../img/assets/sass.png";
+import reduxImg from "../img/assets/redux.png";
+import jsImg from "../img/assets/javascript.png";
 
 const projectData = [
   {
@@ -18,6 +25,7 @@ const projectData = [
     showNavLink: true,
     githubLink: "https://github.com/Brico97442/NinaCarducci",
     linkSubtitle: "Github",
+    iconUrls: [cssImg,html5Img,jsImg],
   },
   {
     title: "Oh My Food",
@@ -29,6 +37,8 @@ const projectData = [
     showNavLink: true,
     githubLink: "https://github.com/Brico97442/OhMyFood",
     linkSubtitle: "Github",
+    iconUrls: [cssImg,html5Img],
+
   },
   {
     title: "Kasa",
@@ -40,6 +50,7 @@ const projectData = [
     showNavLink: true,
     githubLink: "https://github.com/Brico97442/Kasa",
     linkSubtitle: "Github",
+    iconUrls: [cssImg,html5Img,jsImg,reactImg,sassImg],
   },
   {
     title: "Sophie Bluel Architecte",
@@ -52,6 +63,8 @@ const projectData = [
     githubLink:
       "https://github.com/Brico97442/Sophie__BLUEL__Architecte__Portfolio",
     linkSubtitle: "Github",
+    iconUrls: [cssImg,html5Img,jsImg],
+
   },
   {
     title: "Argent Bank",
@@ -63,6 +76,7 @@ const projectData = [
     showNavLink: false,
     githubLink: "https://github.com/Brico97442/ArgentBank-website",
     linkSubtitle: "Github",
+    iconUrls: [cssImg,html5Img,jsImg,reactImg,reduxImg,mongodbImg,sassImg],
   },
 ];
 
@@ -85,6 +99,8 @@ function Projects() {
             linkSubtitle={card.linkSubtitle}
             showNavLink={card.showNavLink}
             githubLink={card.githubLink}
+            iconUrls={card.iconUrls} // Passez les URLs des icônes
+
           />
         ))}
       </div>

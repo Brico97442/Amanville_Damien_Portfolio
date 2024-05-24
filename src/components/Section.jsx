@@ -12,7 +12,7 @@ import seoImg from "../img/assets/seo.jpg";
 import ecommerceImg from "../img/assets/ecommerce.jpg";
 
 function Section({ className, titleContent, paragraphe, link, linkText }) {
-  // Supposons que vous avez un tableau de données pour les cartes de service
+  
   const serviceData = [
     {
       title: "One Page Application",

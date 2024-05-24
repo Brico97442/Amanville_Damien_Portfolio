@@ -1,6 +1,6 @@
 import React from "react";
 import Section from "../components/Section";
-import Test from "../components/test";
+import SelectComponent from "../components/SelectComponent";
 import Parallaxe from "../components/Parallaxe";
 import Projects from "./Projects"
 function Home() {
@@ -13,7 +13,7 @@ function Home() {
         titleContent="A propos de moi"
       />
       <Projects/>
-      <Test/>
+      <SelectComponent/>
       <Section className="services-card" titleContent="Mes services" />
       <Section
         className="contact"

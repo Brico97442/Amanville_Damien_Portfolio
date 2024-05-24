@@ -1,0 +1,19 @@
+#parallaxe {
+  display: flex;
+  min-height: 70vh;
+  justify-content: center;
+  align-items: end;
+  color: #fff;
+  background-image: url("../img/assets/img/damien2.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@media (min-width: 1024px) {
+  #parallaxe {
+    justify-content: end;
+    align-items: center;
+    margin: auto;
+  }
+}/*# sourceMappingURL=parallaxe.css.map */
