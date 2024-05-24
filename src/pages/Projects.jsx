@@ -1,3 +1,4 @@
+import GithubItem from "../components/GithubItem";
 import React from "react";
 import Videocard from "../components/Videocard";
 import ninaImg from "../img/nina.png";
@@ -39,7 +40,7 @@ const projectData = [
     title: "Argent Bank",
     description: "Application Bancaire",
     url: argentBankImg,
-    content: "Kasa est un projet d'application permettant au particulier de réserver un hébergement.",
+    content: "Argent Bank est une interface utilisateur pour une application bancaire. Avec la possibilité de modifier le nom de l'utilisateur, stocké dans une base de données, ce projet portait sur la gestion du state global dans une application via redux",
     link: "https://brico97442.github.io/OhMyFood/"
   },
 ];
@@ -47,7 +48,7 @@ const projectData = [
 function Projects() {
   return (
     <main className="projects" id="projects">
-      <h2>Mes projets</h2>
+      <h2>Mes derniers projets</h2>
       <div className="divider">
         <hr />
       </div>
@@ -63,6 +64,8 @@ function Projects() {
           />
         ))}
       </div>
+      <GithubItem/>
+
     </main>
   );
 }
