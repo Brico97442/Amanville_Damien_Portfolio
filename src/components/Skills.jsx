@@ -1,21 +1,25 @@
 // Header.js
 import React from "react";
-import cssImg from "../img/assets/css.png";
-import reactImg from "../img/assets/react.png";
-import reactRouterImg from "../img/assets/reactrouter.png";
-import mongodbImg from "../img/assets/mongodb.png";
+import cssImg from "../img/assets/css.webp";
+import reactImg from "../img/assets/react.webp";
+import reactRouterImg from "../img/assets/reactrouter.webp";
+import mongodbImg from "../img/assets/mongodb.webp";
 import sassImg from "../img/assets/sass.png";
-import reduxImg from "../img/assets/redux.png";
-import jsImg from "../img/assets/javascript.png";
-import html5Img from "../img/assets/html5.png";
-import githubImg from "../img/assets/github.png";
-import vercelImg from "../img/assets/vercel.png";
+import reduxImg from "../img/assets/redux.webp";
+import jsImg from "../img/assets/javascript.webp";
+import html5Img from "../img/assets/html5.webp";
+import githubImg from "../img/assets/github.webp";
+import vercelImg from "../img/assets/vercel.webp";
 import ghpImg from "../img/assets/ghpages.svg";
+import gitImg from "../img/assets/git.webp";
 import IconItems from "./IconItems";
 
+
 function Skills() {
+  
   const iconUrls1=[jsImg, html5Img,reactImg,reduxImg,sassImg,mongodbImg,reactRouterImg,cssImg]
-  const iconUrls2=[githubImg,vercelImg,ghpImg]
+  const iconUrls2=[githubImg,vercelImg,ghpImg,gitImg]
+
   return (
     <div id="skills">
       <h2>Mes compétences</h2>

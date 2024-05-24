@@ -1,0 +1,32 @@
+.github-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+.github-item a {
+  color: #fff;
+}
+.github-item-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #adb5bd;
+  border-radius: 10px;
+  height: 100%;
+  padding: 5px;
+}
+.github-item-wrapper .icon-container {
+  max-width: 30px;
+  max-height: 30px;
+  display: flex;
+  box-sizing: content-box;
+}
+.github-item img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 30px;
+  height: 30px;
+}/*# sourceMappingURL=github-item.css.map */

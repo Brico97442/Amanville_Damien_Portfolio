@@ -703,7 +703,6 @@ video:not(:hover) {
     min-height: 25vh;
   }
   .about .section-content {
-    padding: 0;
     width: 100%;
   }
 }
@@ -713,7 +712,7 @@ video:not(:hover) {
   justify-content: center;
   align-items: end;
   color: #fff;
-  background-image: url("../img/assets/img/damien2.png");
+  background-image: url("../img/assets/img/damien2.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -754,8 +753,8 @@ video:not(:hover) {
 }
 .github-item img {
   object-fit: contain;
-  width: 100%;
-  height: auto;
+  width: 30px;
+  height: 30px;
 }
 
 .icon-items-wrapper {

@@ -29,7 +29,7 @@ function CardModal({ closeModal, content, link, linkText, icon, showNavLink,gith
             className="side-modal-container-close-btn"
             onClick={handleClose}
           >
-            <FontAwesomeIcon icon={icon} size="lg" />
+            <FontAwesomeIcon icon={icon} size="lg"/>
           </button>
         </div>
       </div>

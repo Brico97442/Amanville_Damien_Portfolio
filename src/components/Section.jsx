@@ -6,10 +6,10 @@ import {
   faGlobe,
   faCartShopping,
 } from "@fortawesome/free-solid-svg-icons"; // Utilisation de faTimes au lieu de faXmark pour l'icône de fermeture
-import onepageImg from "../img/assets/onepage.jpg";
-import multipageImg from "../img/assets/multiApplication.jpg";
-import seoImg from "../img/assets/seo.jpg";
-import ecommerceImg from "../img/assets/ecommerce.jpg";
+import onepageImg from "../img/assets/onepage.webp";
+import multipageImg from "../img/assets/multiApplication.webp";
+import seoImg from "../img/assets/seo.webp";
+import ecommerceImg from "../img/assets/ecommerce.webp";
 
 function Section({ className, titleContent, paragraphe, link, linkText }) {
   
