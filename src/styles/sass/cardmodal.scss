@@ -20,29 +20,44 @@
     font-size: 12px;
     text-align: center;
 
+    .button-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .github-item{
+        &-title{
+          display: none;
+        }
+
+      }
+      .nav-link{
+        padding :5px;
+      }
+    }
     button {
       color: #fff;
       background-color: #000;
       width: 10px;
       height: 10px;
     }
-
-    p {
-      padding: 5px;
-    }
-    a{
+    a {
       color: #fff;
     }
+    
   }
   &-wrapper {
     display: flex;
     height: 100%;
     width: 100%;
     border-radius: 10px;
-  }
-
-  .card-wrapper a.navLink {
-    color: red;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #adb5bd;
+      border-radius: 10px;
+      height: 100%;
+    }
   }
 }
 
@@ -54,5 +69,3 @@
   align-items: center;
   border-radius: 10px;
 }
-
-

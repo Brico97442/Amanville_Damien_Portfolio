@@ -2,13 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import githubImg from "../img/assets/github2.png";
 
-function GithubItem() {
+function GithubItem({linkSubtitle,githubItemTitle,githubLink}) {
   return (
     <section className="github-item">
-      <p>Retrouvez l'ensemble de mes projets sur</p>
+      <p className="github-item-title">{githubItemTitle}</p>
       <div className="github-item-wrapper">
-        <Link to="https://github.com/Brico97442" target="blank">
-          <p>Mon Github</p>
+        <Link to={githubLink} target="blank">
+          <p>{linkSubtitle}</p>
         </Link>
         <div className="icon-container">
           <img src={githubImg} alt="Icône GitHub" />

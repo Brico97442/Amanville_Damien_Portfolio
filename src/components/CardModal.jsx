@@ -2,8 +2,9 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../styles/sass/cardmodal.scss";
+import GithubItem from "./GithubItem";
 
-function CardModal({ closeModal, content, link, linkText,icon}) {
+function CardModal({ closeModal, content, link, linkText, icon, showNavLink,githubLink }) {
   const handleClose = (event) => {
     event.stopPropagation(); // Empêche la propagation de l'événement de clic à l'élément parent
     closeModal();
@@ -17,9 +18,14 @@ function CardModal({ closeModal, content, link, linkText,icon}) {
           onClick={(e) => e.stopPropagation()}
         >
           <p>{content}</p>
-          <NavLink to={link} target="blank" className="nav-link">
-            {linkText}
-          </NavLink>
+          <div className="button-wrapper">
+            <GithubItem linkSubtitle="Github" githubLink={githubLink}/>
+            {showNavLink && (
+              <NavLink to={link} target="blank" className="nav-link">
+                {linkText}
+              </NavLink>
+            )}
+          </div>
           <button
             className="side-modal-container-close-btn"
             onClick={handleClose}
