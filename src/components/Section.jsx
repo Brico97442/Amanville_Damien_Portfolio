@@ -5,7 +5,7 @@ import {
   faLayerGroup,
   faGlobe,
   faCartShopping,
-} from "@fortawesome/free-solid-svg-icons"; // Utilisation de faTimes au lieu de faXmark pour l'icône de fermeture
+} from "@fortawesome/free-solid-svg-icons"; 
 import onepageImg from "../img/assets/onepage.webp";
 import multipageImg from "../img/assets/multiApplication.webp";
 import seoImg from "../img/assets/seo.webp";

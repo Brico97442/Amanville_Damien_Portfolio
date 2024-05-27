@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "../styles/sass/cardmodal.scss";
 import GithubItem from "./GithubItem";
 
 function CardModal({ closeModal, content, link, linkText, icon, showNavLink,githubLink,linkSubtitle }) {

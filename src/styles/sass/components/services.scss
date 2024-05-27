@@ -30,6 +30,12 @@
 
       .card-modal {
         &-content {
+          button {
+            @media (min-width: 1024px) {
+              display: none;
+            }
+          }
+
           .button-wrapper {
             .github-item {
               &-wrapper {

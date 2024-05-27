@@ -3,6 +3,7 @@ import Section from "../components/Section";
 import SelectComponent from "../components/SelectComponent";
 import Parallaxe from "../components/Parallaxe";
 import Projects from "./Projects"
+
 function Home() {
   return (
     <main className="home">

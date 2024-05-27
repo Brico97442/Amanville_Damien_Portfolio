@@ -1,6 +1,4 @@
-// Header.js
 import React from "react";
-import "../styles/sass/header.scss";
 
 function Welcome() {
   return (

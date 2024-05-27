@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { motion, AnimatePresence } from "framer-motion";
-import "../styles/sass/sidemodal.scss";
 
 const backdropVariants = {
   open: { opacity: 1, transition: { duration: 0.5 } },
