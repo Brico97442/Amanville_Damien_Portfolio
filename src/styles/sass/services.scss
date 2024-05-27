@@ -33,7 +33,7 @@
           .button-wrapper {
             .github-item {
               &-wrapper {
-                display: none;                
+                display: none;
               }
             }
           }
@@ -70,6 +70,7 @@
 @media (min-width: 600px) {
   .services-card {
     cursor: pointer;
+
     .section-content {
       width: 100%;
       padding: 0;
@@ -77,6 +78,7 @@
         .services-card {
           flex-wrap: wrap;
           justify-content: center;
+
           .card {
             max-width: 47%;
           }

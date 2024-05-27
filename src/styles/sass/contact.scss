@@ -3,20 +3,18 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  padding: 0 20px;
+  padding: 20px;
   margin-bottom: 30px;
   max-width: 1440px;
   margin: auto;
+  
   .section-content {
     width: 100%;
     margin-bottom: 20px;
+    
     &-wrapper {
       max-width: 100%;
-      // hr {
-      //   border: solid 1px #000;
-      //   margin: 20px;
-      // }
-
+      
       a {
         color: #000;
         font-weight: 500;
@@ -71,6 +69,7 @@
     margin-bottom: 50px;
 
     .form-wrapper {
+      
       form {
         width: auto;
         min-width: 400px;

@@ -4,11 +4,12 @@
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
-  
+
   h2 {
     text-align: start;
     font-size: 2.2em;
   }
+
   .animated {
     display: flex;
     flex-direction: column;
@@ -38,7 +39,7 @@
     opacity: 0;
     flex-direction: column;
     justify-content: end;
-    animation: slideLeft 1.5s ease-out forwards ;
+    animation: slideLeft 1.5s ease-out forwards;
 
     h1 {
       font-weight: 400;
@@ -110,9 +111,9 @@
 
       .undescore {
         display: inline-block;
-        width: 2em; /* Ajustez la largeur selon vos besoins */
-        height: 0.125em; /* Ajustez la hauteur selon vos besoins */
-        background-color: #fff; /* Couleur de l'underscore */
+        width: 2em;
+        height: 0.125em;
+        background-color: #fff;
         animation: blink 1s infinite;
       }
     }
@@ -127,7 +128,7 @@
     position: relative;
     display: flex;
   }
-  
+
   @keyframes cursor {
     to {
       border-left: 2px solid #fff;
@@ -139,13 +140,15 @@
   .welcome {
     flex-wrap: nowrap;
     align-items: end;
-    
+
     .animated {
       .welcome-content {
         width: 100%;
+
         h2 {
           font-size: 3em;
         }
+
         h1 {
           font-size: 2.2em;
         }
