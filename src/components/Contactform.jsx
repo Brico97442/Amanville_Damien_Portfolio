@@ -1,8 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 
 function ContactForm() {
   const form = useRef();
+  const [successMessage, setSuccessMessage] = useState("");
+
+
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -12,12 +15,13 @@ function ContactForm() {
     .then(
       (result) => {
         console.log('SUCCESS!');
+        setSuccessMessage("Message envoyé");
+        e.target.reset()
       },
       (error) => {
         console.log('FAILED...', error.text);
       },
     );
-    e.target.reset()
   };
   return (
     <form ref={form} onSubmit={sendEmail}>
@@ -38,7 +42,9 @@ function ContactForm() {
       />
       <textarea id="message" name="message" placeholder="Votre Message" required></textarea>
       <button type="submit">Envoyer</button>
+      {successMessage && <p>{successMessage}</p>}
     </form>
+
   );
 }
 
