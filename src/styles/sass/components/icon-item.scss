@@ -1,8 +1,9 @@
+@import "../base/mixins.scss";
+
 .icon-items {
   &-wrapper {
-    display: flex;
+    @include flex-content-center;
     gap: 10px;
-    justify-content: center;
     background-color: #bcbcbc;
     
     img {

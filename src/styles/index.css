@@ -254,8 +254,8 @@ footer {
 
 .icon-items-wrapper {
   display: flex;
-  gap: 10px;
   justify-content: center;
+  gap: 10px;
   background-color: #bcbcbc;
 }
 .icon-items-wrapper img {
