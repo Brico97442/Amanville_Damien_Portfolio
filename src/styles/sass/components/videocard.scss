@@ -1,6 +1,8 @@
+@import "../base/mixins.scss";
+
 .card-video {
-  display: flex;
-  flex-direction: column;
+@include flex;
+@include flex-colum;
   gap: 10px;
   width: 100%;
   box-sizing: border-box;
