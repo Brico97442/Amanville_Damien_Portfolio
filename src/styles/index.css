@@ -589,6 +589,8 @@ video:not(:hover) {
   }
 }
 .welcome {
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
@@ -599,8 +601,8 @@ video:not(:hover) {
 }
 .welcome .animated {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   gap: 10px;
   width: 100%;
 }
@@ -618,10 +620,10 @@ video:not(:hover) {
   border-radius: 25px;
 }
 .welcome-content {
-  max-width: 1440px;
-  display: flex;
-  opacity: 0;
   flex-direction: column;
+  display: flex;
+  max-width: 1440px;
+  opacity: 0;
   justify-content: end;
   animation: slideLeft 1.5s ease-out forwards;
 }

@@ -1,4 +1,7 @@
+@import "../base/mixins.scss";
+
 .welcome {
+  @include flex-content-center;
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
@@ -9,18 +12,15 @@
   }
 
   .animated {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-item-center;
+    @include flex-column;
     gap: 10px;
     width: 100%;
   }
 
   .identity {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     gap: 10px;
 
     img {
@@ -32,10 +32,10 @@
   }
 
   &-content {
+    @include flex-column;
+    @include flex;
     max-width: 1440px;
-    display: flex;
     opacity: 0;
-    flex-direction: column;
     justify-content: end;
     animation: slideLeft 1.5s ease-out forwards;
 
