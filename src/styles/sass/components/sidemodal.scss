@@ -1,7 +1,7 @@
+@import "../base/mixins.scss";
+
 .side-modal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   background-color: #bcbcbc;
   position: fixed;
   z-index: 200;
