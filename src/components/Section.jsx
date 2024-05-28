@@ -10,7 +10,6 @@ import onepageImg from "../img/assets/onepage.webp";
 import multipageImg from "../img/assets/multiApplication.webp";
 import seoImg from "../img/assets/seo.webp";
 import ecommerceImg from "../img/assets/ecommerce.webp";
-import { motion } from "framer-motion";
 
 function Section({ className, titleContent, paragraphe, link, linkText }) {
   
