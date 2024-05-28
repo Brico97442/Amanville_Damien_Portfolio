@@ -1,15 +1,11 @@
-import React from "react";
+import React, { useRef } from "react";
 import Servicecard from "./Servicecard";
-import {
-  faCode,
-  faLayerGroup,
-  faGlobe,
-  faCartShopping,
-} from "@fortawesome/free-solid-svg-icons"; 
+import { faCode, faLayerGroup, faGlobe, faCartShopping } from "@fortawesome/free-solid-svg-icons"; 
 import onepageImg from "../img/assets/onepage.webp";
 import multipageImg from "../img/assets/multiApplication.webp";
 import seoImg from "../img/assets/seo.webp";
 import ecommerceImg from "../img/assets/ecommerce.webp";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 function Section({ className, titleContent, paragraphe, link, linkText }) {
   
@@ -24,7 +20,7 @@ function Section({ className, titleContent, paragraphe, link, linkText }) {
     {
       title: "Multi Page Application ",
       content:
-        "Explorez notre solution de sites vitrines multi-pages, conçue pour offrir une expérience web plus complête et entièrement personnalisable, présentant en détail votre entreprise, vos produits et vos valeurs.",
+        "Explorez notre solution de sites vitrines multi-pages, conçue pour offrir une expérience web plus complète et entièrement personnalisable, présentant en détail votre entreprise, vos produits et vos valeurs.",
       icon: faLayerGroup,
       imageUrl: multipageImg,
     },
@@ -36,7 +32,7 @@ function Section({ className, titleContent, paragraphe, link, linkText }) {
       imageUrl: seoImg,
     },
     {
-      title: "Sit e-commerce",
+      title: "Site e-commerce",
       content:
         "Conception de plateforme e-commerce, conçue pour offrir une expérience d'achat en ligne fluide et sécurisée, mettant en valeur vos produits de manière attrayante et maximisant les conversions pour votre entreprise.",
       icon: faCartShopping,
@@ -44,11 +40,14 @@ function Section({ className, titleContent, paragraphe, link, linkText }) {
     },
   ];
 
+  
   return (
-    <section className={className}>
+    <section className={className} >
       <div className="section-content">
         <div className="section-content-wrapper">
-          <h1>{titleContent}</h1>
+          <h1>
+            {titleContent}
+          </h1>
           <div className="divider">
             <hr />
           </div>

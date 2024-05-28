@@ -4,9 +4,7 @@ function Career() {
   return (
     <section id="career" className="career">
       <h1>Expériences professionnelles</h1>
-
       <hr />
-
       <p>
         <span>2024-jusqu'à maintenant</span>
         <br />
