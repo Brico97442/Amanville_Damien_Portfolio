@@ -1,19 +1,21 @@
+@import "../base/mixins.scss";
+
 #skills {
-  display: flex;
-  flex-direction: column;
+  @include flex;
+  @include flex-column;
   padding: 20px;
   background-color: #f5f5f5;
   gap: 20px;
 
   .competences {
-    display: flex;
-    flex-direction: column;
+    @include flex;
+    @include flex-column;
     gap: 20px;
     background-color: #f5f5f5;
 
     .icon-items {
-      display: flex;
-      flex-direction: column;
+      @include flex;
+      @include flex-column;
       gap: 20px;
       &-wrapper {
         padding: 20px;
@@ -26,16 +28,15 @@
     }
 
     .competences-wrapper {
+      @include flex-item-center;
       background-color: #bcbcbc;
-      display: flex;
       flex-wrap: wrap;
-      justify-content: center;
       gap: 10px;
       padding: 20px;
       border-radius: 15px;
 
       .icons {
-        display: flex;
+        @include flex;
         max-width: 50px;
         min-width: 50px;
         max-height: 50px;
@@ -60,15 +61,11 @@
   }
 
   .button-wrapper {
-    display: flex;
+    @include flex-center;
     margin: auto;
-    justify-content: center;
-    align-items: center;
 
     button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex-center;
       width: 50%;
       height: 60px;
       padding: 10px;
@@ -93,8 +90,8 @@
   }
 
   .career {
-    display: flex;
-    flex-direction: column;
+    @include flex;
+    @include flex-column;
     gap: 20px;
     padding: 20px;
     background-color: #f5f5f5;

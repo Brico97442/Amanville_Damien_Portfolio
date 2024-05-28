@@ -1,6 +1,7 @@
+@import "../base/mixins.scss";
+
 .services-card {
-  display: flex;
-  justify-content: center;
+  @include flex-content-center;
   flex-wrap: wrap;
   gap: 20px;
   max-width: 1440px;
@@ -12,9 +13,7 @@
   }
 
   .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   @include flex-center ;
     gap: 10px;
     width: 100%;
     height: 100%;
@@ -24,8 +23,8 @@
     border-radius: 10px;
 
     &-content {
-      display: flex;
-      flex-direction: column;
+      @include flex;
+      @include flex-column;
       padding: 20px;
 
       .card-modal {
@@ -65,8 +64,8 @@
       }
 
       &-wrapper {
-        display: flex;
-        flex-direction: column;
+        @include flex;
+        @include flex-column;
         gap: 10px;
         z-index: 2;
       }
@@ -85,7 +84,6 @@
         .services-card {
           flex-wrap: wrap;
           justify-content: center;
-
           .card {
             max-width: 47%;
           }
