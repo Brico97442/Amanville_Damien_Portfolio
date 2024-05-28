@@ -62,15 +62,15 @@ footer {
 }
 .about .section-content {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 100%;
   padding: 20px;
 }
 .about .section-content-wrapper {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .about .section-content-wrapper p {
   max-width: 70%;
