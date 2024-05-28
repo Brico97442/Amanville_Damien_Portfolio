@@ -1,18 +1,759 @@
-/* Error: Undefined mixin.
- *   ,
- * 5 | @include flex-colum;
- *   | ^^^^^^^^^^^^^^^^^^^
- *   '
- *   src\styles\sass\components\videocard.scss 5:1  @import
- *   src\styles\sass\index.scss 14:9                root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a   \2577 \a 5 \2502  @include flex-colum;\d\a   \2502  ^^^^^^^^^^^^^^^^^^^\a   \2575 \a   src\\styles\\sass\\components\\videocard.scss 5:1  @import\a   src\\styles\\sass\\index.scss 14:9                root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: #f5f5f5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+header a {
+  text-align: left;
+  font-weight: 200;
+}
+header nav {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  margin: 30px;
+}
+header nav button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #000;
+  background-color: #f5f5f5;
+  border: none;
+  font-size: 18px;
+}
+header nav .nav-link {
+  text-decoration: none;
+  color: #000;
+}
+header nav button.nav-link:hover {
+  cursor: pointer;
+}
+
+footer {
+  background-color: #f5f5f5;
+  padding: 50px;
+  margin-top: auto;
+  color: #000;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  max-width: 1440px;
+  margin: auto;
+}
+.about .section-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+.about .section-content-wrapper p {
+  max-width: 70%;
+  text-align: justify;
+  margin: auto;
+}
+
+@media (min-width: 600px) {
+  .about {
+    min-height: 25vh;
+  }
+  .about .section-content {
+    width: 100%;
+  }
+}
+.card-modal {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+.card-modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000;
+  color: #f5f5f5;
+  border-radius: 10px;
+  gap: 10px;
+  width: 100%;
+  margin: 10px;
+  padding: 20px;
+  font-size: 12px;
+  text-align: center;
+}
+.card-modal-content .button-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card-modal-content .button-wrapper .github-item-title {
+  display: none;
+}
+.card-modal-content .button-wrapper .nav-link {
+  padding: 5px;
+}
+.card-modal-content button {
+  color: #fff;
+  background-color: #000;
+  width: 10px;
+  height: 10px;
+}
+.card-modal-content a {
+  color: #fff;
+}
+.card-modal-wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.card-modal-wrapper a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #adb5bd;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.card-modal.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.contact {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+  max-width: 1440px;
+  margin: auto;
+}
+.contact .section-content {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contact .section-content-wrapper {
+  max-width: 100%;
+}
+.contact .section-content-wrapper a {
+  color: #000;
+  font-weight: 500;
+  cursor: pointer;
+}
+.contact .form-wrapper {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+.contact .form-wrapper h2 {
+  margin-bottom: 50px;
+}
+.contact .form-wrapper form {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  min-width: 280px;
+}
+.contact .form-wrapper form input {
+  width: 100%;
+  height: 30px;
+  border: solid 1px #000;
+  padding: 10px;
+}
+.contact .form-wrapper form textarea {
+  border: solid 1px #000;
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+}
+.contact .form-wrapper form button {
+  max-width: 160px;
+  width: 100%;
+  height: 35px;
+  border: solid 1px #000;
+  border-radius: 10px;
+}
+
+@media (min-width: 600px) {
+  .contact {
+    width: auto;
+    margin-bottom: 50px;
+  }
+  .contact .form-wrapper form {
+    width: auto;
+    min-width: 400px;
+  }
+}
+.github-item {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.github-item a {
+  color: #fff;
+}
+.github-item-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #adb5bd;
+  border-radius: 10px;
+  height: 100%;
+  padding: 5px;
+}
+.github-item-wrapper .icon-container {
+  max-width: 30px;
+  max-height: 30px;
+  display: flex;
+  box-sizing: content-box;
+}
+.github-item img {
+  object-fit: contain;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-items-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: #bcbcbc;
+}
+.icon-items-wrapper img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  max-width: 40px;
+  max-height: 40px;
+}
+
+#parallaxe {
+  display: flex;
+  justify-content: center;
+  min-height: 70vh;
+  align-items: end;
+  color: #fff;
+  background-image: url("../img/assets/img/damien2.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@media (min-width: 1024px) {
+  #parallaxe {
+    justify-content: end;
+    align-items: center;
+    margin: auto;
+  }
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 1440px;
+  margin: auto;
+}
+.projects .card-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.services-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1440px;
+  margin: auto;
+}
+.services-card .section-content {
+  padding: 20px;
+  margin-bottom: 50px;
+}
+.services-card .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  background-color: #bcbcbc;
+  position: relative;
+  border-radius: 10px;
+}
+.services-card .card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+@media (min-width: 1024px) {
+  .services-card .card-content .card-modal-content button {
+    display: none;
+  }
+}
+.services-card .card-content .card-modal-content .button-wrapper .github-item-wrapper {
+  display: none;
+}
+.services-card .card-content img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.services-card .card-content h2 {
+  font-size: 18px;
+  text-align: center;
+  z-index: 2;
+}
+.services-card .card-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 2;
+}
+
+@media (min-width: 600px) {
+  .services-card {
+    cursor: pointer;
+  }
+  .services-card .section-content {
+    width: 100%;
+    padding: 0;
+  }
+  .services-card .section-content-wrapper .services-card {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .services-card .section-content-wrapper .services-card .card {
+    max-width: 47%;
+  }
+}
+.side-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bcbcbc;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 110vh;
+}
+.side-modal-container {
+  display: flex;
+  position: relative;
+}
+.side-modal-container-close-btn {
+  display: flex;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  border: none;
+  background-color: #bcbcbc;
+}
+.side-modal nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 18px;
+}
+.side-modal nav a.nav-link {
+  gap: 10px;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+.side-modal nav a.nav-link:hover {
+  text-decoration: underline;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f5f5f5;
+  gap: 20px;
+}
+#skills .competences {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #f5f5f5;
+}
+#skills .competences .icon-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#skills .competences .icon-items-wrapper {
+  padding: 20px;
+  flex-wrap: wrap;
+  border-radius: 15px;
+}
+#skills .competences p {
+  font-weight: 500;
+}
+#skills .competences .competences-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #bcbcbc;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 15px;
+}
+#skills .competences .competences-wrapper .icons {
+  display: flex;
+  max-width: 50px;
+  min-width: 50px;
+  max-height: 50px;
+}
+#skills .competences .competences-wrapper .icons img {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
+#select-wrapper {
+  margin: auto;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+#select-wrapper h1 {
+  font-size: 24px;
+}
+#select-wrapper .button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+#select-wrapper .button-wrapper button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 60px;
+  padding: 10px;
+  border: none;
+  background-color: #000;
+  color: #f5f5f5;
+  cursor: pointer;
+}
+#select-wrapper .button-wrapper button h2 {
+  font-size: 12px;
+}
+#select-wrapper .button-wrapper button.active {
+  background-color: #f5f5f5;
+  color: #000;
+  text-decoration: underline;
+}
+#select-wrapper .hidden {
+  display: none;
+}
+#select-wrapper .career {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+#select-wrapper .career span {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+@media (min-width: 1024px) {
+  #skills {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  #skills .competences {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  #skills .competences-wrapper {
+    border-radius: 0;
+  }
+  #select-wrapper {
+    max-width: 1440px;
+    margin-bottom: 50px;
+  }
+  #select-wrapper .button-wrapper {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  #select-wrapper .button-wrapper :nth-child(1) {
+    border-top-left-radius: 15px;
+  }
+  #select-wrapper .button-wrapper :nth-child(2) {
+    border-top-right-radius: 15px;
+  }
+}
+.card-video {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 10px;
+  position: relative;
+  background-color: #bcbcbc;
+}
+.card-video .video-description:hover {
+  cursor: pointer;
+}
+.card-video img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.card-video h2 {
+  font-size: 18px;
+}
+
+video:not(:hover) {
+  opacity: 0.6;
+}
+
+@media (min-width: 600px) {
+  .card {
+    max-width: 45%;
+  }
+}
+.welcome {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+.welcome h2 {
+  text-align: start;
+  font-size: 2.2em;
+}
+.welcome .animated {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.welcome .identity {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.welcome .identity img {
+  object-fit: contain;
+  max-width: 75%;
+  height: auto;
+  border-radius: 25px;
+}
+.welcome-content {
+  flex-direction: column;
+  display: flex;
+  max-width: 1440px;
+  opacity: 0;
+  justify-content: end;
+  animation: slideLeft 1.5s ease-out forwards;
+}
+.welcome-content h1 {
+  font-weight: 400;
+  font-size: 2em;
+  color: #fff;
+}
+@keyframes translateRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-12vw);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.welcome-content h2 {
+  color: #fff;
+  font-size: 2.6em;
+  animation: translateRight 1.5s ease 1 normal forwards;
+}
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(12vw);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.welcome-content p {
+  font-size: 2.2em;
+  color: #fff;
+}
+.welcome-content .welcome-subtitle {
+  display: flex;
+  gap: 10px;
+  align-items: last baseline;
+  justify-content: end;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  60% {
+    opacity: 0.9;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.welcome-content .welcome-subtitle .undescore {
+  display: inline-block;
+  width: 2em;
+  height: 0.125em;
+  background-color: #fff;
+  animation: blink 1s infinite;
+}
+.welcome .animated-text {
+  font-size: 1em;
+  font-weight: 600;
+}
+.welcome .animated-text span {
+  position: relative;
+  display: flex;
+}
+@keyframes cursor {
+  to {
+    border-left: 2px solid #fff;
+  }
+}
+
+@media (min-width: 600px) {
+  .welcome {
+    flex-wrap: nowrap;
+    align-items: end;
+  }
+  .welcome .animated .welcome-content {
+    width: 100%;
+  }
+  .welcome .animated .welcome-content h2 {
+    font-size: 3em;
+  }
+  .welcome .animated .welcome-content h1 {
+    font-size: 2.2em;
+  }
+  .welcome .identity img {
+    max-width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .welcome {
+    justify-content: end;
+    margin-right: 15vw;
+  }
+  .welcome .identity img {
+    max-width: 85%;
+  }
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 110px;
+}
+
+.divider {
+  padding: 20px 0;
+}
+.divider hr {
+  border: solid 1px #000;
+  margin: auto;
+  max-width: 650px;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  hr {
+    margin: auto;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

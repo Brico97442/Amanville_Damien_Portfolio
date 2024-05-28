@@ -13,8 +13,6 @@
     padding: 20px;
 
     &-wrapper {
-      @include flex-center;
-
       p {
         max-width: 70%;
         text-align: justify;
