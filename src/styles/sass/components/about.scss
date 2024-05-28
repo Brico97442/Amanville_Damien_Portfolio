@@ -6,7 +6,8 @@
   margin-bottom: 30px;
   max-width: 1440px;
   margin: auto;
-
+  background-color: #000;
+  color: #BCBCBC;
   .section-content {
     @include flex-center;
     width: 100%;

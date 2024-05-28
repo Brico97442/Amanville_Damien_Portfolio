@@ -83,7 +83,7 @@ const projectData = [
 function Projects() {
   return (
     <main className="projects" id="projects">
-      <h2>Mes derniers projets</h2>
+      <h1>Mes derniers projets</h1>
       <div className="divider">
         <hr />
       </div>
