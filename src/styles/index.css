@@ -153,8 +153,8 @@ footer {
 }
 
 .contact {
-  display: flex;
   flex-direction: column;
+  display: flex;
   align-items: center;
   gap: 20px;
   padding: 20px;
@@ -175,16 +175,16 @@ footer {
   cursor: pointer;
 }
 .contact .form-wrapper {
-  display: flex;
   flex-direction: column;
+  display: flex;
   align-items: center;
 }
 .contact .form-wrapper h2 {
   margin-bottom: 50px;
 }
 .contact .form-wrapper form {
-  display: flex;
   flex-direction: column;
+  display: flex;
   align-items: center;
   gap: 20px;
   width: 100%;
