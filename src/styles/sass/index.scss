@@ -13,6 +13,7 @@
 @import "./components/skills.scss";
 @import "./components/videocard.scss";
 @import "./components/welcome.scss";
+@import "../sass/base/mixins.scss";
 
 .App {
   display: flex;

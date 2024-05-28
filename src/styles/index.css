@@ -51,10 +51,6 @@ footer {
   margin-top: auto;
   color: #000;
 }
-footer section {
-  display: flex;
-  justify-content: center;
-}
 
 .about {
   display: flex;
@@ -300,7 +296,6 @@ footer section {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   gap: 40px;
   margin-bottom: 20px;
@@ -597,8 +592,6 @@ video:not(:hover) {
   }
 }
 .welcome {
-  display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;

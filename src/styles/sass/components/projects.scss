@@ -1,15 +1,15 @@
+@import "../base/mixins.scss";
+
 .projects {
-  display: flex;
-  flex-direction: column;
+  @include flex;
+  @include flex-column;
   padding: 20px;
   max-width: 1440px;
   margin: auto;
   
   .card-wrapper {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-content-center;
     flex-wrap: wrap;
     gap: 40px;
     margin-bottom: 20px;
