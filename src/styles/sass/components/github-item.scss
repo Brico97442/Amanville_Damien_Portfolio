@@ -1,8 +1,8 @@
+@import "../base/mixins.scss";
+
 .github-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include flex-column;
+  @include flex-center;
   text-align: center;
   gap: 10px;
   
@@ -11,9 +11,7 @@
   }
   
   &-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     background-color: #adb5bd;
     border-radius: 10px;
     height: 100%;
@@ -22,7 +20,7 @@
     .icon-container {
       max-width: 30px;
       max-height: 30px;
-      display: flex;
+      @include flex;
       box-sizing: content-box;
     }
   }
