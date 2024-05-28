@@ -94,14 +94,14 @@ footer {
   left: 0;
 }
 .card-modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: #000;
   color: #f5f5f5;
   border-radius: 10px;
-  display: flex;
   gap: 10px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   margin: 10px;
   padding: 20px;
@@ -136,8 +136,8 @@ footer {
 }
 .card-modal-wrapper a {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background-color: #adb5bd;
   border-radius: 10px;
   height: 100%;
@@ -145,10 +145,10 @@ footer {
 
 .card-modal.active {
   display: flex;
-  height: 100%;
-  width: 100%;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  width: 100%;
   border-radius: 10px;
 }
 
