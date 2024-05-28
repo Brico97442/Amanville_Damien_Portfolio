@@ -12,11 +12,11 @@
   max-height: 110vh;
 
   &-container {
-    display: flex;
+    @include flex;
     position: relative;
 
     &-close-btn {
-      display: flex;
+      @include flex;
       position: absolute;
       left: 30px;
       top: 30px;
@@ -26,16 +26,14 @@
   }
 
   nav {
-    display: flex;
+    @include flex;
+    @include flex-column;
     justify-content: space-between;
-    flex-direction: column;
     gap: 20px;
     font-size: 18px;
 
     a.nav-link {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
+      
       gap: 10px;
       text-decoration: none;
       color: #000;
