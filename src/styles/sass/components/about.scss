@@ -4,7 +4,6 @@
   @include flex-content-center;
   gap: 20px;
   margin-bottom: 30px;
-  max-width: 1440px;
   margin: auto;
   background-color: #000;
   color: #BCBCBC;
@@ -14,6 +13,9 @@
     padding: 20px;
 
     &-wrapper {
+      hr{
+        border: solid 1px #bcbcbc;
+      }
       p {
         max-width: 70%;
         text-align: justify;

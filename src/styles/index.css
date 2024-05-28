@@ -57,7 +57,6 @@ footer {
   justify-content: center;
   gap: 20px;
   margin-bottom: 30px;
-  max-width: 1440px;
   margin: auto;
   background-color: #000;
   color: #BCBCBC;
@@ -68,6 +67,9 @@ footer {
   align-items: center;
   width: 100%;
   padding: 20px;
+}
+.about .section-content-wrapper hr {
+  border: solid 1px #bcbcbc;
 }
 .about .section-content-wrapper p {
   max-width: 70%;

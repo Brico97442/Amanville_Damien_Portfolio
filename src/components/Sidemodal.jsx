@@ -11,11 +11,11 @@ const backdropVariants = {
 
 const modalVariants = {
   open: {
-    x: 0,
+    opacity: 1,
     transition: { type: "tween", ease: "easeInOut", duration: 0.5 },
   },
   closed: {
-    x: "100%",
+   opacity : 0,
     transition: { type: "tween", ease: "easeInOut", duration: 0.5 },
   },
 };
