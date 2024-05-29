@@ -107,6 +107,7 @@ footer {
 }
 .card-modal-content .button-wrapper {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 10px;
 }
@@ -121,6 +122,8 @@ footer {
   background-color: #000;
   width: 10px;
   height: 10px;
+  left: 20px;
+  top: 20px;
 }
 .card-modal-content a {
   color: #fff;

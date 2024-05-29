@@ -21,7 +21,7 @@
     text-align: center;
 
     .button-wrapper {
-      @include flex-item-center;
+      @include flex-center ;
       gap: 10px;
 
       .github-item {
@@ -39,6 +39,8 @@
       background-color: #000;
       width: 10px;
       height: 10px;
+      left: 20px;
+      top: 20px;
     }
     a {
       color: #fff;
