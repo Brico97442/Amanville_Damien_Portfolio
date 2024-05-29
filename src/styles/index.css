@@ -58,8 +58,6 @@ footer {
   gap: 20px;
   margin-bottom: 30px;
   margin: auto;
-  background-color: #000;
-  color: #BCBCBC;
 }
 .about .section-content {
   display: flex;
@@ -69,7 +67,7 @@ footer {
   padding: 20px;
 }
 .about .section-content-wrapper hr {
-  border: solid 1px #bcbcbc;
+  border: solid 1px #000;
 }
 .about .section-content-wrapper p {
   max-width: 70%;

@@ -25,7 +25,7 @@ function Skills() {
       <h2>Mes compétences</h2>
       <hr />
       <div className="competences">
-        <IconItems iconTitle="J'ai déjà travailler avec" iconUrls={iconUrls1}/>
+        <IconItems iconTitle="J'ai déjà travaillé avec" iconUrls={iconUrls1}/>
       </div>
       <div className="competences">
       <IconItems iconTitle="Les services que j'utilise" iconUrls={iconUrls2}/>
