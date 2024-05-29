@@ -335,6 +335,9 @@ footer {
     display: none;
   }
 }
+.services-card .card-content .card-modal-content .button-wrapper {
+  gap: 0;
+}
 .services-card .card-content .card-modal-content .button-wrapper .github-item-wrapper {
   display: none;
 }
