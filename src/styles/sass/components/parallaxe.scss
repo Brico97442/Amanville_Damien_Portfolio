@@ -1,18 +1,20 @@
 @import "../base/mixins.scss";
 
 #parallaxe {
+  background-image: url("../img/assets/img/damien375.webp");
   @include flex-content-center;
   min-height: 70vh;
   align-items: end;
   color: #fff;
-  background-image: url("../img/assets/img/damien2.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 1024px) {
   #parallaxe {
+    background-image: url("../img/assets/img/damien2.webp");
     justify-content: end;
     align-items: center;
     margin: auto;
