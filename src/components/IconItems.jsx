@@ -6,7 +6,7 @@ function IconItems({ iconUrls,iconTitle }) {
       <div className="icon-items-wrapper">
         {iconUrls.map((iconUrl, index) => (
           <div className="icon" key={index}>
-            <img src={iconUrl} alt="icône technos" />
+            <img src={iconUrl} alt="icône technos" loading="lazy"/>
           </div>
         ))}
       </div>

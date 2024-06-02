@@ -18,7 +18,7 @@ function Videocard({ content, title, websiteScreenshot, description, link, showN
     <div className="card" onClick={openModal}>
       <div className="card-video">
         <h2>{title}</h2>
-        <img src={websiteScreenshot} alt="illustration du site" />
+        <img src={websiteScreenshot} alt="illustration du site" loading="lazy"/>
         <div className="video-description">{description}</div>
         <IconItems iconUrls={iconUrls}/>
         {isModalOpen && (

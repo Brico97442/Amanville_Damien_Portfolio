@@ -25,7 +25,7 @@ function Servicecard({ content, title, description, icon, imageUrl }) {
           <p>{description}</p>
           <FontAwesomeIcon icon={icon} size="xl" />
         </div>
-        <img src={imageUrl} alt="illustration de la card" />
+        <img src={imageUrl} alt="illustration de la card" loading="lazy"/>
         {isModalOpen && (
           <CardModal
             closeModal={closeModal}
