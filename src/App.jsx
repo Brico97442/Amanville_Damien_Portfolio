@@ -7,7 +7,7 @@ import Projects from "./pages/Projects";
 import Footer from "./components/Footer";
 import Notfound from "./pages/Notfound";
 import Contact from "./pages/Contact";
-import "./styles/index.css";
+import "./styles/index.minify.css";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
