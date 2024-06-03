@@ -1,6 +1,6 @@
 import React from "react";
 import GithubItem from "../components/GithubItem";
-import Videocard from "../components/Videocard";
+import Projectcard from "../components/Projectcard";
 import ninaImg from "../img/nina.webp";
 import ohmyfoodImg from "../img/ohmyfood.webp";
 import kasaImg from "../img/kasa.webp";
@@ -89,7 +89,7 @@ function Projects() {
       </div>
       <div className="card-wrapper">
         {projectData.map((card, index) => (
-          <Videocard
+          <Projectcard
             key={index}
             title={card.title}
             description={card.description}

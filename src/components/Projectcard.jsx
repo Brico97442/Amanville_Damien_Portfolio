@@ -3,7 +3,7 @@ import CardModal from "./CardModal";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import IconItems from "./IconItems";
 
-function Videocard({ content, title, websiteScreenshot, description, link, showNavLink,githubLink,linkSubtitle,iconUrls }) {
+function Projectcard({ content, title, websiteScreenshot, description, link, showNavLink,githubLink,linkSubtitle,iconUrls }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
@@ -38,4 +38,4 @@ function Videocard({ content, title, websiteScreenshot, description, link, showN
   );
 }
 
-export default Videocard;
+export default Projectcard;
