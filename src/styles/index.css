@@ -631,7 +631,6 @@ video:not(:hover) {
 .welcome-content h1 {
   font-weight: 400;
   font-size: 2em;
-  color: #fff;
 }
 @keyframes translateRight {
   0% {
@@ -644,7 +643,6 @@ video:not(:hover) {
   }
 }
 .welcome-content h2 {
-  color: #fff;
   font-size: 2.6em;
   animation: translateRight 1.5s ease 1 normal forwards;
 }
@@ -660,7 +658,6 @@ video:not(:hover) {
 }
 .welcome-content p {
   font-size: 2.2em;
-  color: #fff;
 }
 .welcome-content .welcome-subtitle {
   display: flex;
@@ -692,7 +689,6 @@ video:not(:hover) {
   display: inline-block;
   width: 2em;
   height: 0.125em;
-  background-color: #fff;
   animation: blink 1s infinite;
 }
 .welcome .animated-text {
